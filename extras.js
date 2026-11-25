@@ -69,15 +69,39 @@ function centerOf(card) {
   };
 }
 
-// A gentle curve from point a to point b
-function curve(a, b) {
-  const midX = (a.x + b.x) / 2;
-  const midY = (a.y + b.y) / 2;
-  // Push the middle of the curve sideways so it bends
-  const bend = 0.25;
-  const controlX = midX - (b.y - a.y) * bend;
-  const controlY = midY + (b.x - a.x) * bend;
-  return `M ${a.x} ${a.y} Q ${controlX} ${controlY} ${b.x} ${b.y}`;
+// The bend point for a gentle curve from a to b
+function controlPoint(a, b) {
+  const bend = 0.25;   // bigger number = more curved
+  return {
+    x: (a.x + b.x) / 2 - (b.y - a.y) * bend,
+    y: (a.y + b.y) / 2 + (b.x - a.x) * bend
+  };
+}
+
+// A point partway along the curve: t = 0 is the start, t = 1 is the end
+function pointOnCurve(a, c, b, t) {
+  return {
+    x: (1 - t) * (1 - t) * a.x + 2 * (1 - t) * t * c.x + t * t * b.x,
+    y: (1 - t) * (1 - t) * a.y + 2 * (1 - t) * t * c.y + t * t * b.y
+  };
+}
+
+// Is a point inside a card's box? (plus a little extra room, so the
+// circle sits just outside the card and its cyan outline)
+function isInside(point, card) {
+  const room = 10;
+  return point.x > card.offsetLeft - room && point.x < card.offsetLeft + card.offsetWidth + room &&
+         point.y > card.offsetTop - room && point.y < card.offsetTop + card.offsetHeight + room;
+}
+
+// Walk along the curve until we step outside the card: that's its edge
+function edgeOf(card, a, c, b, fromStart) {
+  for (let i = 1; i <= 100; i++) {
+    const t = fromStart ? i / 100 : 1 - i / 100;
+    const point = pointOnCurve(a, c, b, t);
+    if (!isInside(point, card)) return point;
+  }
+  return fromStart ? a : b;
 }
 
 function drawLines() {
@@ -92,10 +116,16 @@ function drawLines() {
     const other = document.querySelector(`.card[data-entry="${name}"]`);
     if (!other) continue;
     const end = centerOf(other);
+    const bendPoint = controlPoint(start, end);
+
+    // Circles go where the line leaves each card, so they are not hidden
+    const dot1 = edgeOf(active, start, bendPoint, end, true);
+    const dot2 = edgeOf(other, start, bendPoint, end, false);
+
     lines.innerHTML +=
-      `<path d="${curve(start, end)}"/>` +
-      `<circle cx="${start.x}" cy="${start.y}" r="4"/>` +
-      `<circle cx="${end.x}" cy="${end.y}" r="4"/>`;
+      `<path d="M ${start.x} ${start.y} Q ${bendPoint.x} ${bendPoint.y} ${end.x} ${end.y}"/>` +
+      `<circle cx="${dot1.x}" cy="${dot1.y}" r="5"/>` +
+      `<circle cx="${dot2.x}" cy="${dot2.y}" r="5"/>`;
   }
 }
 
