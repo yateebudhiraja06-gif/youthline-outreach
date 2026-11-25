@@ -7,13 +7,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Libre+Caslon+Text&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 
   <!-- LEFT: the board. Drag or scroll to move around it. -->
+  <div class="board-wrap">
   <main class="board" id="board" aria-label="Outreach entries">
-    <div class="canvas">
+    <div class="sizer" id="sizer">
+    <div class="canvas" id="canvas">
+
+      <!-- Curved lines between connected cards are drawn in here -->
+      <svg class="lines" id="lines" width="1400" height="1300" aria-hidden="true"></svg>
+
 
       <!-- Row 1 -->
       <button class="card note" data-entry="sb-1546" style="top: 60px; left: 70px; --tilt: -3deg;">
@@ -100,7 +106,17 @@
       </button>
 
     </div>
+    </div>
   </main>
+
+  <!-- Zoom buttons in the corner of the board -->
+  <div class="zoom-controls">
+    <button id="zoom-out" aria-label="Zoom out">−</button>
+    <button id="zoom-in" aria-label="Zoom in">+</button>
+    <button id="zoom-fit" aria-label="Fit the whole board on screen">Fit</button>
+  </div>
+  </div>
+
 
   <!-- RIGHT: the panel -->
   <aside class="panel" id="panel">
@@ -157,5 +173,6 @@
   </aside>
 
   <script src="script.js?v=1"></script>
+    <script src="extras.js?v=1"></script>
 </body>
 </html>
