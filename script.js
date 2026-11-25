@@ -130,7 +130,7 @@ const entries = {
       ["YouthLine on Instagram", "https://www.instagram.com/theyouthline/p/De0OF54Eqrc/"]
     ],
     description: "Two of our amazing YouthLine volunteers and two staff members attended the Behavioral Health Tech Conference in Nashville, TN! They connected with advocates and organizations working to make mental health care more accessible and equitable for everyone.",
-    connections: ["talent-council", "osbha"]
+    connections: ["talent-council", "bh-webinar", "osbha"]
   },
 
   "osbha": {
@@ -165,11 +165,23 @@ const entries = {
   },
 
   "bh-webinar": {
-    title: "Behavioral Health Webinar",
+    title: "Beyond the Barriers: Behavioral Health Tech Webinar",
     details: {
+      "Date": "September 15, 2026",
+      "Host": "Behavioral Health Tech Insider Sessions, in partnership with Somethings",
+      "Session": "Beyond the Barriers: Building Youth Behavioral Health Support That Actually Reaches Everyone",
+      "YouthLine speakers": "Morgan Leets, MEd, Deputy Director of Youth Development, Training, and Quality Assurance; Yatee, YouthLine Volunteer",
+      "Also on the panel": "Amber W. Childs, Ph.D (Somethings); Kelsie Okamura (Penn Medicine); Marc Fagan, Psy.D (YouthCare Health Choice Illinois)",
       "Type": "Professional",
       "Key strength": "Advocating"
     },
+    sources: [
+      ["Behavioral Health Tech Insider Sessions", "https://www.behavioralhealthtech.com/insider-sessions"],
+      ["Watch on demand", "https://us06web.zoom.us/webinar/register/6717878039488/WN_IOYVTSy1Q4KafZDZXPNtBg"]
+    ],
+    description: "YouthLine's Morgan Leets and volunteer Yatee joined a national Behavioral Health Tech webinar on building youth behavioral health support that reaches every young person. They spoke alongside leaders from Somethings, Penn Medicine, and YouthCare Health Choice Illinois.",
+    connections: ["bh-tech", "talent-council"]
+  },
     sources: [],
     description: "Details coming soon.",
     connections: ["talent-council"]
