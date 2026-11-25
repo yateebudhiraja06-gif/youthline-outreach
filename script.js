@@ -286,7 +286,8 @@ const entries = {
   "apa-monitor": {
     title: "APA Monitor: Peer Support Crisis Line for Teens",
     details: {
-      "Date": "July 2023",
+      "Date": "July 1, 2023",
+      "Headline": "YouthLine: A peer-support crisis line for teens",
       "Outlet": "Monitor on Psychology, American Psychological Association",
       "Type": "Press",
       "Key strength": "Listening"
@@ -294,7 +295,7 @@ const entries = {
     sources: [
       ["Read on APA", "https://www.apa.org/monitor/2023/07/peer-support-crisis-line-teens"]
     ],
-    description: "“Can teenagers really do this? And the answer is an obvious yes.” (YouthLine director Emily Moser)",
+    description: "YouthLine director Emily Moser was interviewed by the American Psychological Association’s Monitor on Psychology about how YouthLine’s peer-support model works and why it matters. She is often asked, “Can teenagers really do this?” to which she said, “The answer is an obvious yes.”",
     connections: ["pbs-newshour", "talent-council"]
   },
 
