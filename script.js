@@ -121,15 +121,19 @@ const entries = {
   "bh-tech": {
     title: "Behavioral Health Tech Conference",
     details: {
-      "Date": "September 2026",
-      "Venue": "Nashville, Tennessee",
+      "Date": "September 22–24, 2026",
+      "Venue": "Gaylord Opryland Resort & Convention Center, Nashville, Tennessee",
+      "YouthLine panel": "“Schools Can’t Do This Alone - But They Can’t Opt Out Either,” September 24, 2026, Youth & Young Adults track",
+      "Moderator": "Alison Malmon, Active Minds",
+      "Also on the panel": "Alicia Ead (The Bradley Learning Exchange); Lauren Carson (Black Girls Smile); Gabi Green",
       "Type": "Professional",
       "Key strength": "Building"
     },
     sources: [
+      ["Conference agenda (BHT2026)", "https://45392274.fs1.hubspotusercontent-na1.net/hubfs/45392274/BHT2026/BHT2026%20Agenda.pdf"],
       ["YouthLine on Instagram", "https://www.instagram.com/theyouthline/p/De0OF54Eqrc/"]
     ],
-    description: "Two of our amazing YouthLine volunteers and two staff members attended the Behavioral Health Tech Conference in Nashville, TN! They connected with advocates and organizations working to make mental health care more accessible and equitable for everyone.",
+    description: "Two of our amazing YouthLine volunteers and two staff members attended the Behavioral Health Tech Conference in Nashville, TN! They connected with advocates and organizations working to make mental health care more accessible and equitable for everyone. A YouthLine volunteer also spoke on the panel “Schools Can’t Do This Alone - But They Can’t Opt Out Either.”",
     connections: ["talent-council", "bh-webinar", "osbha"]
   },
 
