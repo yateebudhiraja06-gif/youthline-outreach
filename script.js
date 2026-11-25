@@ -184,25 +184,25 @@ const entries = {
   },
 
   "hawaii-school": {
-    title: "YouthLine Hawai‘i School Visit",
+    title: "YouthLine Hawaiʻi School Visit",
     details: {
       "Date": "Fall 2026",
-      "Venue": "Hawai‘i",
+      "Venue": "Hawaiʻi",
       "Type": "Outreach",
       "Key strength": "Building"
     },
     sources: [
       ["YouthLine on Instagram", "https://www.instagram.com/theyouthline/p/DfVDOeBjT0R/"]
     ],
-    description: "YouthLine Hawai‘i volunteers visited a local school to talk with students about stress, stress management, and coping skills! Stress looks different for everyone, and so do the ways we cope.",
+    description: "YouthLine Hawaiʻi volunteers visited a local school to talk with students about stress, stress management, and coping skills! Stress looks different for everyone, and so do the ways we cope.",
     connections: ["hawaii-cohort", "osbha"]
   },
 
   "hawaii-cohort": {
-    title: "YouthLine Hawai‘i Cohort 4",
+    title: "YouthLine Hawaiʻi Cohort 4",
     details: {
       "Date": "October 2026",
-      "Venue": "Hawai‘i",
+      "Venue": "Hawaiʻi",
       "Type": "Training",
       "Key strength": "Building",
       "Outcome": "A fourth cohort of youth volunteers trained"
@@ -210,7 +210,7 @@ const entries = {
     sources: [
       ["YouthLine on Instagram", "https://www.instagram.com/theyouthline/p/DesDeGNgb6F/"]
     ],
-    description: "Help us welcome YouthLine Hawai‘i’s Cohort 4 volunteers! We’re excited to welcome this newest group of youth volunteers as they complete their training and prepare to support peers in their communities. Through their time, care, and commitment, they’re helping make sure youth have someone to turn to when they need support.",
+    description: "Help us welcome YouthLine Hawaiʻi’s Cohort 4 volunteers! We’re excited to welcome this newest group of youth volunteers as they complete their training and prepare to support peers in their communities. Through their time, care, and commitment, they’re helping make sure youth have someone to turn to when they need support.",
     connections: ["hawaii-school"]
   },
 

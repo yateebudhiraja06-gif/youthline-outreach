@@ -1,14 +1,28 @@
-/* ---------- Colors ---------- */
+/* =====================================================
+   YouthLine Outreach — styles
+   Colors and fonts follow the Lines for Life Brand
+   Guidelines v1.8 (YouthLine section):
+   Purple + Cyan dominate; web fonts are Lato and Caslon.
+   ===================================================== */
+
 :root {
+  /* YouthLine primary */
   --purple: #423192;
   --cyan: #00AEEF;
+  /* YouthLine secondary */
+  --navy: #0D163D;
+  --cobalt: #134CA1;
+  /* Neutrals */
+  --matte-black: #231F20;
+  --cerebral-grey: #58595B;
+  --manatee: #929497;
+  --light-gray: #D1D3D4;
+  --anti-flash: #F2F2F2;
+  --off-white: #EEE3D2;
+  --white: #FFFFFF;
+  /* Accents */
+  --light-blue: #CCE7EF;
   --light-purple: #ECEAF4;
-  --text: #231F20;
-  --grey: #58595B;
-  --line: #D1D3D4;
-  --board: #1d1b1a;      /* warm black, softer than pure black */
-  --paper: #EEE3D2;      /* Lines for Life Off-White */
-  --panel: #F3F1EC;      /* warm light grey */
 }
 
 /* ---------- Page layout: board on the left, panel on the right ---------- */
@@ -17,7 +31,7 @@ body {
   display: flex;
   height: 100vh;
   font-family: "Lato", Arial, sans-serif;
-  color: var(--text);
+  color: var(--matte-black);
   line-height: 1.6;
 }
 
@@ -26,16 +40,16 @@ body {
   position: relative;
 }
 
-/* The dark board with a faint warm grid */
+/* The board: YouthLine Navy with a faint grid */
 .board {
   position: absolute;
   inset: 0;
   overflow: auto;
   cursor: grab;
-  background-color: var(--board);
+  background-color: var(--navy);
   background-image:
-    linear-gradient(rgba(255,240,220,0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,240,220,0.05) 1px, transparent 1px);
+    linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 .board.grabbing {
@@ -58,14 +72,15 @@ body {
   width: 420px;
   overflow-y: auto;
   padding: 32px;
-  background: var(--panel);
+  background: var(--anti-flash);
 }
 
+/* Placeholder name until Morgan sends the official YouthLine logo file */
 header h1 {
   display: inline-block;
   margin: 0 0 32px;
   padding: 6px 14px;
-  background: #fff;
+  background: var(--white);
   font-size: 16px;
   font-weight: 700;
   color: var(--purple);
@@ -81,9 +96,10 @@ h2 {
 .label {
   margin: 32px 0 8px;
   font-size: 11px;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: var(--grey);
+  color: var(--cerebral-grey);
 }
 
 .impact {
@@ -102,12 +118,12 @@ h2 {
 }
 .impact span {
   font-size: 12px;
-  color: var(--grey);
+  color: var(--cerebral-grey);
 }
 
 .hint {
   font-size: 13px;
-  color: var(--grey);
+  color: var(--cerebral-grey);
   font-style: italic;
 }
 
@@ -136,11 +152,12 @@ h2 {
   border: none;
   border-radius: 2px;
   text-align: left;
+  color: var(--matte-black);
   cursor: pointer;
   transform: rotate(var(--tilt));
   /* two soft shadows: one close, one wide, so cards look like they rest on the board */
-  box-shadow: 0 1px 2px rgba(0,0,0,0.35), 0 10px 24px rgba(0,0,0,0.3);
-  transition: transform 0.2s;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.35), 0 10px 24px rgba(0,0,0,0.35);
+  transition: transform 0.2s, opacity 0.3s;
 }
 .card p {
   margin: 0;
@@ -151,46 +168,56 @@ h2 {
   z-index: 10;
 }
 
-/* The selected card gets a white outline */
+/* The selected card gets a cyan outline */
 .card.active {
-  outline: 2px solid #fff;
+  outline: 2px solid var(--cyan);
   outline-offset: 4px;
   z-index: 5;
+}
+
+/* When a card is selected, cards that are not connected to it fade back */
+.canvas.focused .card:not(.active):not(.connected) {
+  opacity: 0.45;
 }
 
 /* Sizes */
 .card.wide  { width: 230px; }
 .card.small { width: 140px; }
 
-/* Note cards: paper + typewriter font */
+/* Note cards: quotes in Caslon italic on Off-White paper */
 .note {
-  background: var(--grain), var(--paper);
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 12px;
-  line-height: 1.5;
+  background: var(--grain), var(--off-white);
+  font-family: "Libre Caslon Text", Georgia, serif;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 1.45;
 }
 .note.purple {
   background: var(--grain), var(--light-purple);
 }
+.note.blue {
+  background: var(--grain), var(--light-blue);
+}
 
 /* Photo cards: white polaroid frame */
 .photo {
-  background: var(--grain), #F7F5F0;
+  background: var(--grain), var(--white);
 }
 .photo.tall { width: 160px; }
 
-/* Until real photos arrive: a soft purple block with the event name */
+/* Until real photos arrive: YouthLine purple-to-cyan block with the event name */
 .img-placeholder {
   display: flex;
   align-items: flex-end;
   height: 130px;
   padding: 10px;
   box-sizing: border-box;
-  background: linear-gradient(135deg, #5b4aa8, var(--purple));
-  color: #fff;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 11px;
-  line-height: 1.4;
+  background: linear-gradient(150deg, var(--purple) 45%, var(--cyan) 140%);
+  color: var(--white);
+  font-family: "Lato", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.35;
 }
 .photo.wide .img-placeholder { height: 150px; }
 .photo.tall .img-placeholder { height: 200px; }
@@ -207,9 +234,13 @@ h2 {
 .tag {
   display: block;
   margin-top: 10px;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Lato", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
   font-size: 10px;
-  color: var(--grey);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--cerebral-grey);
 }
 
 /* "New" badge in the corner */
@@ -219,34 +250,64 @@ h2 {
   right: -12px;
   display: grid;
   place-items: center;
-  width: 36px;
-  height: 36px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
-  background: #fff;
-  color: var(--text);
-  font-family: "IBM Plex Mono", monospace;
+  background: var(--cyan);
+  color: var(--white);
+  font-family: "Lato", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
   font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
 
-/* ---------- The big circle + curved lines ---------- */
+/* ---------- The big circle + wiggly lines ---------- */
 .lines {
   position: absolute;
   top: 0;
   left: 0;
   pointer-events: none;
 }
-.lines path,
-.lines .ring {
+.lines path {
   fill: none;
-  stroke: rgba(255, 255, 255, 0.6);
+  stroke: var(--cyan);
   stroke-width: 1.5;
+  stroke-linecap: round;
+  /* draw themselves in, from one card to the other */
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: draw-line 0.9s ease-out forwards;
 }
-.lines circle.dot {
-  fill: #fff;
+@keyframes draw-line {
+  to { stroke-dashoffset: 0; }
 }
 
-/* ---------- Zoom buttons ---------- */
+/* The big circle fades around its edge (see the gradient in extras.js)
+   and fades in when it appears */
+.lines .ring {
+  fill: none;
+  stroke: url(#ring-fade);
+  stroke-width: 1.5;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: fade-in 0.8s ease-out;
+}
+.lines circle.dot {
+  fill: var(--cyan);
+  animation: fade-in 0.8s ease-out;
+}
+.lines circle.dot.big {
+  fill: var(--white);
+}
+@keyframes fade-in {
+  from { opacity: 0; transform: scale(0.92); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* ---------- Board controls ---------- */
 .zoom-controls {
   position: absolute;
   left: 16px;
@@ -255,18 +316,79 @@ h2 {
   gap: 4px;
 }
 .zoom-controls button {
-  min-width: 32px;
-  height: 32px;
-  padding: 0 8px;
-  border: none;
-  background: #2f2c2a;
-  color: #fff;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 14px;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(13, 22, 61, 0.85);   /* Navy */
+  color: var(--white);
+  font-family: "Lato", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
   cursor: pointer;
 }
-.zoom-controls button:hover {
+.zoom-controls button:hover,
+.zoom-controls button[aria-expanded="true"] {
   background: var(--purple);
+  border-color: var(--purple);
+}
+
+/* The "?" guide box */
+.help-box {
+  position: absolute;
+  left: 16px;
+  bottom: 62px;
+  width: 290px;
+  max-height: 70%;
+  overflow-y: auto;
+  padding: 16px 18px;
+  background: var(--anti-flash);
+  color: var(--matte-black);
+  font-size: 13px;
+  line-height: 1.5;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  animation: fade-in 0.2s ease-out;
+}
+.help-box ul {
+  margin: 0;
+  padding-left: 18px;
+}
+.help-box li {
+  margin-bottom: 4px;
+}
+.help-title {
+  margin: 14px 0 6px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--purple);
+}
+.help-title:first-child {
+  margin-top: 0;
+}
+.legend {
+  list-style: none;
+  padding-left: 0 !important;
+}
+.legend span {
+  display: inline-block;
+  width: 18px;
+  color: var(--purple);
+}
+.mini-badge {
+  display: inline-grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--cyan);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 8px;
+  text-transform: uppercase;
 }
 
 /* ---------- Entry view in the panel ---------- */
@@ -292,9 +414,10 @@ h2 {
 }
 #entry-details dt {
   font-size: 11px;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: var(--grey);
+  color: var(--cerebral-grey);
   padding-top: 2px;
 }
 #entry-details dd {
@@ -306,7 +429,7 @@ h2 {
 
 .context {
   padding-left: 12px;
-  border-left: 2px dotted var(--grey);
+  border-left: 2px dotted var(--cerebral-grey);
   font-size: 14px;
 }
 .context a {
@@ -322,11 +445,11 @@ h2 {
   width: 100%;
   padding: 8px 0;
   border: none;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--light-gray);
   background: none;
   text-align: left;
   font: inherit;
-  color: var(--text);
+  color: var(--matte-black);
   cursor: pointer;
 }
 .connection:hover {
@@ -334,9 +457,11 @@ h2 {
 }
 .connection span {
   display: block;
-  font-family: "IBM Plex Mono", monospace;
   font-size: 11px;
-  color: var(--grey);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--cerebral-grey);
 }
 
 /* ---------- Phones: panel on top, board underneath ---------- */

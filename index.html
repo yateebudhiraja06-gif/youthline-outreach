@@ -6,8 +6,8 @@
   <title>YouthLine Outreach</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Libre+Caslon+Text&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=5">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Libre+Caslon+Text:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
 
@@ -35,10 +35,10 @@
         <span class="tag">■ Panel</span>
       </button>
       <button class="card photo tall" data-entry="hawaii-cohort" style="top: 40px; left: 820px; --tilt: 3deg;">
-        <div class="img-placeholder"><span>YouthLine Hawai‘i Cohort 4</span></div>
+        <div class="img-placeholder"><span>YouthLine Hawaiʻi Cohort 4</span></div>
         <span class="tag">✦ Training</span>
       </button>
-      <button class="card note small" data-entry="bh-webinar" style="top: 170px; left: 1040px; --tilt: -1deg;">
+      <button class="card note small blue" data-entry="bh-webinar" style="top: 170px; left: 1040px; --tilt: -1deg;">
         <p>Behavioral Health Webinar</p>
         <span class="tag">■ Talk</span>
       </button>
@@ -56,13 +56,13 @@
         <div class="img-placeholder"><span>Behavioral Health Tech Conference</span></div>
         <span class="tag">△ Conference</span>
       </button>
-      <button class="card note" data-entry="dna-video" style="top: 400px; left: 765px; --tilt: 2deg;">
+      <button class="card note blue" data-entry="dna-video" style="top: 400px; left: 765px; --tilt: 2deg;">
         <p>“Talk with another young person who listens, understands, and cares.”</p>
         <span class="tag">□ Media</span>
       </button>
       <button class="card photo" data-entry="hawaii-school" style="top: 340px; left: 990px; --tilt: -2.5deg;">
         <span class="badge">New</span>
-        <div class="img-placeholder"><span>YouthLine Hawai‘i School Visit</span></div>
+        <div class="img-placeholder"><span>YouthLine Hawaiʻi School Visit</span></div>
         <span class="tag">○ Outreach</span>
       </button>
 
@@ -98,11 +98,39 @@
     </div>
   </main>
 
-  <!-- Zoom buttons in the corner of the board -->
+  <!-- Board controls in the corner -->
   <div class="zoom-controls">
     <button id="zoom-out" aria-label="Zoom out">−</button>
     <button id="zoom-in" aria-label="Zoom in">+</button>
-    <button id="zoom-fit" aria-label="Fit the whole board on screen">Fit</button>
+    <button id="zoom-fit" aria-label="Fit the whole board on screen">
+      <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M1 5V1h4M9 1h4v4M13 9v4H9M5 13H1V9" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+    </button>
+    <button id="help-button" aria-label="How to use this board" aria-expanded="false" aria-controls="help">?</button>
+  </div>
+
+  <!-- The "?" guide: explains what everything on the board means -->
+  <div class="help-box" id="help" hidden>
+    <p class="help-title">How to use this board</p>
+    <ul>
+      <li><b>Click a card</b> to read about it in the panel.</li>
+      <li><b>Drag</b> to move around. <b>Pinch</b> or use − and + to zoom. The corners button shows everything.</li>
+      <li><b>Lines</b> connect related events.</li>
+    </ul>
+    <p class="help-title">Card types</p>
+    <ul class="legend">
+      <li><span>◇</span> Policy: testimony and advocacy with lawmakers</li>
+      <li><span>■</span> Talk or panel: speaking at events</li>
+      <li><span>△</span> Conference</li>
+      <li><span>○</span> Outreach: community events</li>
+      <li><span>□</span> Media: videos and campaigns</li>
+      <li><span>✦</span> Training: new volunteers</li>
+    </ul>
+    <p class="help-title">Cards</p>
+    <ul>
+      <li>Note cards hold quotes. Photo cards show events.</li>
+      <li><span class="mini-badge">New</span> marks recent events.</li>
+      <li>Every event is tagged Listening, Advocating, or Building. The guide in the panel explains each one.</li>
+    </ul>
   </div>
   </div>
 
@@ -125,7 +153,7 @@
         <h2>YouthLine listens, advocates, and builds.</h2>
         <p><strong>Listening.</strong> We listen to our peers ages 24 and under, supporting them through problems no matter how small or big. Who knows youth better than their peers? That is why our volunteers are from 15 to 25 years old. They have over 65 hours of training with certifications in Youth Mental Health First Aid and safeTALK, and also get opportunities throughout the year to further their education.</p>
         <p><strong>Advocating.</strong> We advocate by using the trends that we see on the lines, like concerns over AI, to testify and inform legislation that helps youth in the state of Oregon. Our volunteers witnessed Governor Tina Kotek sign SB 1546 into law, a bill that requires AI platforms to connect at-risk youth to crisis resources. A volunteer testified in support of it. YouthLine representatives created an advisory council to work with Senator Ron Wyden to further educate the federal government on how to help youth.</p>
-        <p><strong>Building.</strong> We build our reach by having 155 active youth volunteers who answer from 4 to 10pm, but we want to expand our times and services. Outside of those current hours, adults are available by phone. We have established two locations in Hawai’i with 20 active volunteers. Not only are we expanding, we give our volunteers the opportunity to practice industry standards such as HIPAA and electronic notes.</p>
+        <p><strong>Building.</strong> We build our reach by having 155 active youth volunteers who answer from 4 to 10pm, but we want to expand our times and services. Outside of those current hours, adults are available by phone. We have established two locations in Hawaiʻi with 20 active volunteers. Not only are we expanding, we give our volunteers the opportunity to practice industry standards such as HIPAA and electronic notes.</p>
         <p class="hint">Click any card on the board to read about it.</p>
       </section>
     </div>
@@ -160,7 +188,7 @@
     </footer>
   </aside>
 
-  <script src="script.js?v=1"></script>
-  <script src="extras.js?v=3"></script>
+  <script src="script.js?v=2"></script>
+  <script src="extras.js?v=4"></script>
 </body>
 </html>
