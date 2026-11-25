@@ -21,7 +21,8 @@ body {
 .board {
   flex: 1;
   position: relative;
-  overflow: hidden;
+  overflow: auto;          /* lets you scroll/drag around the big canvas */
+  cursor: grab;
   background-color: #1a1a1a;
   background-image:
     linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px),
@@ -46,7 +47,7 @@ header h1 {
   font-size: 16px;
   font-weight: 700;
   color: var(--purple);
-    text-transform: uppercase;
+  text-transform: uppercase;
   letter-spacing: 4px;
 }
 
@@ -90,10 +91,31 @@ h2 {
   padding-left: 12px;
   border-left: 3px solid var(--cyan);
 }
+.help-links {
+  padding: 0;
+  list-style: none;
+}
+.help-links a {
+  color: var(--purple);
+  font-weight: 700;
+}
+
+/* ---------- Cards ---------- */
+
+/* The canvas is bigger than the screen, so there is room for every card */
+.canvas {
+  position: relative;
+  width: 1400px;
+  height: 1300px;
+}
+.board.grabbing {
+  cursor: grabbing;
+}
+
 /* All cards: placed freely on the board, slightly tilted */
 .card {
   position: absolute;
-  width: 200px;
+  width: 180px;
   padding: 12px;
   border: none;
   text-align: left;
@@ -102,11 +124,19 @@ h2 {
   box-shadow: 0 4px 14px rgba(0,0,0,0.4);
   transition: transform 0.2s;
 }
+.card p {
+  margin: 0;
+}
 /* On hover, the card straightens and lifts */
 .card:hover,
 .card:focus {
   transform: rotate(0deg) scale(1.05);
   z-index: 10;
+}
+/* The card whose details are showing gets a cyan outline */
+.card.active {
+  outline: 3px solid var(--cyan);
+  outline-offset: 3px;
 }
 
 /* Note cards: cream paper + typewriter font */
@@ -137,11 +167,99 @@ h2 {
   font-size: 10px;
   color: var(--grey);
 }
-.help-links {
+
+/* ---------- Panel: guide + entry view ---------- */
+
+.hint {
+  font-size: 13px;
+  color: var(--grey);
+  font-style: italic;
+}
+
+.back {
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  font-size: 13px;
+  color: var(--purple);
+  cursor: pointer;
+}
+#entry h2 {
+  margin-top: 0;
+}
+
+/* Details list: label on the left, value on the right */
+#entry-details {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 6px 16px;
+  margin: 24px 0;
+  font-size: 14px;
+}
+#entry-details dt {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--grey);
+  padding-top: 2px;
+}
+#entry-details dd {
+  margin: 0;
+}
+#entry-details a {
+  color: var(--purple);
+}
+
+/* "This entry is part of..." note with a dotted line, like the reference */
+.context {
+  padding-left: 12px;
+  border-left: 2px dotted var(--grey);
+  font-size: 14px;
+}
+.context a {
+  color: var(--purple);
+}
+
+/* Connections */
+#entry-connections {
   padding: 0;
   list-style: none;
 }
-.help-links a {
+.connection {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  border: none;
+  border-bottom: 1px solid var(--line);
+  background: none;
+  text-align: left;
+  font: inherit;
+  color: var(--text);
+  cursor: pointer;
+}
+.connection:hover {
   color: var(--purple);
-  font-weight: 700;
+}
+.connection span {
+  display: block;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  color: var(--grey);
+}
+
+/* ---------- Phones and narrow windows: panel on top, board underneath ---------- */
+@media (max-width: 800px) {
+  body {
+    flex-direction: column;
+    height: auto;
+  }
+  .panel {
+    order: -1;               /* panel moves above the board */
+    width: auto;
+    overflow: visible;
+  }
+  .board {
+    height: 70vh;
+  }
 }

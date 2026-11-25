@@ -7,82 +7,155 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Libre+Caslon+Text&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
-  <main class="board">
+  <!-- LEFT: the board. Drag or scroll to move around it. -->
+  <main class="board" id="board" aria-label="Outreach entries">
+    <div class="canvas">
 
-  <button class="card note" data-entry="sb-1546"
-          style="top: 8%; left: 10%; --tilt: -3deg;">
-    <p>“What isn’t human, doesn’t understand humans.”</p>
-    <span class="tag">◇ Policy</span>
-  </button>
+      <!-- Row 1 -->
+      <button class="card note" data-entry="sb-1546" style="top: 60px; left: 70px; --tilt: -3deg;">
+        <p>“What isn’t human, doesn’t understand humans.”</p>
+        <span class="tag">◇ Policy</span>
+      </button>
 
-  <button class="card photo" data-entry="blazers"
-          style="top: 6%; left: 52%; --tilt: 2deg;">
-    <div class="img-placeholder"></div>
-    <span class="tag">○ Outreach</span>
-  </button>
+      <button class="card photo" data-entry="blazers" aria-label="Trail Blazers Pride Night" style="top: 40px; left: 420px; --tilt: 2deg;">
+        <div class="img-placeholder"></div>
+        <span class="tag">○ Outreach</span>
+      </button>
 
-  <button class="card note pink" data-entry="talent-council"
-          style="top: 42%; left: 35%; --tilt: 1deg;">
-    <p>“By being there. By being present.”</p>
-    <span class="tag">■ Talk</span>
-  </button>
+      <button class="card note pink" data-entry="unplugged" style="top: 90px; left: 760px; --tilt: -1deg;">
+        <p>“Youth are the experts this field needs.”</p>
+        <span class="tag">■ Panel</span>
+      </button>
 
-  <button class="card photo" data-entry="advocacy-day"
-          style="top: 55%; left: 5%; --tilt: -2deg;">
-    <div class="img-placeholder"></div>
-    <span class="tag">◇ Policy</span>
-  </button>
+      <button class="card photo" data-entry="hawaii-cohort" aria-label="YouthLine Hawai'i Cohort 4" style="top: 50px; left: 1100px; --tilt: 3deg;">
+        <div class="img-placeholder"></div>
+        <span class="tag">✦ Training</span>
+      </button>
 
-  <button class="card note" data-entry="new-drug-talk"
-          style="top: 62%; left: 60%; --tilt: -1.5deg;">
-    <p>“The way adults respond can determine whether we feel comfortable coming to them again.”</p>
-    <span class="tag">■ Panel</span>
-  </button>
+      <!-- Row 2 -->
+      <button class="card photo" data-entry="advocacy-day" aria-label="AFSP Advocacy Day" style="top: 360px; left: 40px; --tilt: -2deg;">
+        <div class="img-placeholder"></div>
+        <span class="tag">◇ Policy</span>
+      </button>
 
-</main>
+      <button class="card note pink" data-entry="talent-council" style="top: 380px; left: 400px; --tilt: 1deg;">
+        <p>“By being there. By being present.”</p>
+        <span class="tag">■ Talk</span>
+      </button>
 
-  <aside class="panel">
+      <button class="card photo" data-entry="bh-tech" aria-label="Behavioral Health Tech Conference" style="top: 340px; left: 730px; --tilt: -2.5deg;">
+        <div class="img-placeholder"></div>
+        <span class="tag">△ Conference</span>
+      </button>
+
+      <button class="card note" data-entry="dna-video" style="top: 400px; left: 1090px; --tilt: 2deg;">
+        <p>“Talk with another young person who listens, understands, and cares.”</p>
+        <span class="tag">□ Media</span>
+      </button>
+
+      <!-- Row 3 -->
+      <button class="card note" data-entry="new-drug-talk" style="top: 680px; left: 80px; --tilt: 1.5deg;">
+        <p>“The way adults respond can determine whether we feel comfortable coming to them again.”</p>
+        <span class="tag">■ Panel</span>
+      </button>
+
+      <button class="card photo" data-entry="hawaii-school" aria-label="YouthLine Hawai'i school visit" style="top: 650px; left: 430px; --tilt: -1.5deg;">
+        <div class="img-placeholder"></div>
+        <span class="tag">○ Outreach</span>
+      </button>
+
+      <button class="card note" data-entry="wyden-council" style="top: 700px; left: 770px; --tilt: 2.5deg;">
+        <p>Bringing youth voices to federal mental health policy.</p>
+        <span class="tag">◇ Policy</span>
+      </button>
+
+      <button class="card photo" data-entry="afsp-walk" aria-label="AFSP Walk" style="top: 660px; left: 1110px; --tilt: -2deg;">
+        <div class="img-placeholder"></div>
+        <span class="tag">○ Outreach</span>
+      </button>
+
+      <!-- Row 4 -->
+      <button class="card photo" data-entry="osbha" aria-label="Oregon School-Based Health Alliance Conference" style="top: 960px; left: 60px; --tilt: 2deg;">
+        <div class="img-placeholder"></div>
+        <span class="tag">△ Conference</span>
+      </button>
+
+      <button class="card note pink" data-entry="roleplay" style="top: 990px; left: 420px; --tilt: -2deg;">
+        <p>“YouthLine is here to listen.”</p>
+        <span class="tag">□ Media</span>
+      </button>
+
+      <button class="card photo" data-entry="dc-trip" aria-label="Washington, D.C. trip" style="top: 950px; left: 760px; --tilt: 1deg;">
+        <div class="img-placeholder"></div>
+        <span class="tag">◇ Policy</span>
+      </button>
+
+      <button class="card note" data-entry="bh-webinar" style="top: 1000px; left: 1100px; --tilt: -1deg;">
+        <p>Behavioral Health Webinar</p>
+        <span class="tag">■ Talk</span>
+      </button>
+
+    </div>
+  </main>
+
+  <!-- RIGHT: the panel -->
+  <aside class="panel" id="panel">
     <header>
       <h1>YouthLine</h1>
     </header>
 
-    <section class="impact">
-      <div><strong>155</strong><span>active youth volunteers</span></div>
-      <div><strong>65+</strong><span>hours of training each</span></div>
-      <div><strong>99%</strong><span>de-escalation rate</span></div>
-    </section>
+    <!-- What the panel shows before any card is clicked -->
+    <div id="home">
+      <section class="impact">
+        <div><strong>155</strong><span>active youth volunteers</span></div>
+        <div><strong>65+</strong><span>hours of training each</span></div>
+        <div><strong>99%</strong><span>de-escalation rate</span></div>
+      </section>
 
-    <section class="guide">
-      <p class="label">Guide</p>
-      <h2>YouthLine listens, advocates, and builds.</h2>
-      <p><strong>Listening.</strong> We listen to our peers ages 24 and under, supporting them through problems no matter how small or big. Who knows youth better than their peers? That is why our volunteers are from 15 to 25 years old. They have over 65 hours of training with certifications in Youth Mental Health First Aid and safeTALK, and also get opportunities throughout the year to further their education.
-</p>
-      <p><strong>Advocating.</strong> We advocate by using the trends that we see on the lines, like concerns over AI, to testify and inform legislation that helps youth in the state of Oregon. Our volunteers witnessed Governor Tina Kotek sign SB 1546 into law, a bill that requires AI platforms to connect at-risk youth to crisis resources. A volunteer testified in support of it. YouthLine representatives created an advisory council to work with Senator Ron Wyden to further educate the federal government on how to help youth. 
-</p>
-      <p><strong>Building.</strong> We build our reach by having 155 active youth volunteers who answer from 4 to 10pm, but we want to expand our times and services. Outside of those current hours, adults are available by phone. We have established two locations in Hawai’i with 20 active volunteers. Not only are we expanding, we give our volunteers the opportunity to practice industry standards such as HIPAA and electronic notes. 
-</p>
-    </section>
+      <section class="guide">
+        <p class="label">Guide</p>
+        <h2>YouthLine listens, advocates, and builds.</h2>
+        <p><strong>Listening.</strong> We listen to our peers ages 24 and under, supporting them through problems no matter how small or big. Who knows youth better than their peers? That is why our volunteers are from 15 to 25 years old. They have over 65 hours of training with certifications in Youth Mental Health First Aid and safeTALK, and also get opportunities throughout the year to further their education.</p>
+        <p><strong>Advocating.</strong> We advocate by using the trends that we see on the lines, like concerns over AI, to testify and inform legislation that helps youth in the state of Oregon. Our volunteers witnessed Governor Tina Kotek sign SB 1546 into law, a bill that requires AI platforms to connect at-risk youth to crisis resources. A volunteer testified in support of it. YouthLine representatives created an advisory council to work with Senator Ron Wyden to further educate the federal government on how to help youth.</p>
+        <p><strong>Building.</strong> We build our reach by having 155 active youth volunteers who answer from 4 to 10pm, but we want to expand our times and services. Outside of those current hours, adults are available by phone. We have established two locations in Hawai’i with 20 active volunteers. Not only are we expanding, we give our volunteers the opportunity to practice industry standards such as HIPAA and electronic notes.</p>
+        <p class="hint">Click any card on the board to read about it.</p>
+      </section>
+    </div>
+
+    <!-- What the panel shows after a card is clicked (filled in by script.js) -->
+    <div id="entry" hidden>
+      <button class="back" id="back">← Back to guide</button>
+      <p class="label">Title</p>
+      <h2 id="entry-title"></h2>
+      <dl id="entry-details"></dl>
+      <p class="context">This entry is part of YouthLine’s outreach record. Want to work with us? <a href="#contact">Get in touch</a>.</p>
+      <p class="label">Description</p>
+      <p id="entry-description"></p>
+      <p class="label">Connections</p>
+      <ul id="entry-connections"></ul>
+    </div>
 
     <section class="help">
-  <p class="label">Need help now?</p>
-  <p>Youth answer daily from 4–10pm Pacific. Adults are available by phone at all other times.</p>
-  <ul class="help-links">
-    <li><a href="tel:18779688491">Call 1-877-968-8491</a></li>
-<li><a href="sms:839863">Text teen2teen to 839863</a></li>    <li><a href="https://youthlinechat.linesforlife.org">Chat online</a></li>
-    <li><a href="mailto:teen2teen@linesforlife.org">Email teen2teen@linesforlife.org</a></li>
-  </ul>
-</section>
+      <p class="label">Need help now?</p>
+      <p>YouthLine is open every day of the year, including holidays. Youth answer daily from 4–10pm Pacific. Adults are available by phone at all other times.</p>
+      <ul class="help-links">
+        <li><a href="tel:18779688491">Call 1-877-968-8491</a></li>
+        <li><a href="sms:839863">Text teen2teen to 839863</a></li>
+        <li><a href="https://youthlinechat.linesforlife.org">Chat online</a></li>
+        <li><a href="mailto:teen2teen@linesforlife.org">Email teen2teen@linesforlife.org</a></li>
+      </ul>
+    </section>
 
-
-    <footer>
+    <footer id="contact">
       <p class="label">Work with us</p>
       <!-- Partner / Fund / Contact links -->
     </footer>
   </aside>
 
+  <script src="script.js?v=1"></script>
 </body>
 </html>
