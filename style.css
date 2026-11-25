@@ -486,10 +486,17 @@ footer {
   padding-top: 8px;
   border-top: 1px solid var(--light-gray);
 }
+.work-group {
+  margin: 18px 0 6px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--purple);
+}
 .work-links {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -504,4 +511,10 @@ footer {
 }
 .work-links a:hover {
   background: var(--cyan);
+}
+.contact-info {
+  font-size: 14px;
+}
+.contact-info a {
+  color: var(--purple);
 }
