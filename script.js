@@ -294,7 +294,7 @@ const entries = {
     sources: [
       ["Read on APA", "https://www.apa.org/monitor/2023/07/peer-support-crisis-line-teens"]
     ],
-    description: "“They want to talk to somebody close or similar in age.” (YouthLine director Emily Moser)",
+    description: "“Can teenagers really do this? And the answer is an obvious yes.” (YouthLine director Emily Moser)",
     connections: ["pbs-newshour", "talent-council"]
   },
 
