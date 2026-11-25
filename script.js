@@ -335,13 +335,14 @@ const entries = {
       "Date": "January 15, 2026",
       "Headline": "YouthLine brings peer-based crisis support to southern Oregon",
       "Outlet": "Jefferson Public Radio, The Jefferson Exchange",
+      "Accredited by": "American Association of Suicidology",
       "Type": "Press",
       "Key strength": "Building"
     },
     sources: [
       ["Listen on JPR", "https://www.ijpr.org/podcast/the-jefferson-exchange/2026-01-15/youthline-expands-to-southern-oregon"]
     ],
-    description: "“I’m looking forward to building connections in southern Oregon.” (Pan Hamsa, YouthLine southern Oregon coordinator)",
+    description: "“The organization has served ages 10 to 24 since 2000.” (Jefferson Public Radio)",
     connections: ["wildhorse-grant", "osbha"]
   },
 
