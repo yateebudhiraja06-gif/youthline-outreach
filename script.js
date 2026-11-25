@@ -41,7 +41,7 @@ const entries = {
       ["Read on KGW", "https://www.kgw.com/article/news/politics/kotek-sign-oregon-ai-teen-mental-health-bill-safety-chatbot/283-321743ef-c1c2-49dc-bdec-da956c94704f"],
       ["Also covered by OregonLive", "https://www.oregonlive.com/politics/2026/05/new-oregon-law-will-compel-ai-chatbots-to-connect-suicidal-users-to-real-life-help.html"]
     ],
-    description: "“AI isn’t human, and it doesn’t know what we feel.” (YouthLine volunteer, to KGW)",
+    description: "KGW covered Governor Tina Kotek signing Oregon’s AI chatbot safety bill, SB 1546, and featured YouthLine’s role in supporting it, including a YouthLine volunteer who testified for the bill. “AI isn’t human, and it doesn’t know what we feel,” the volunteer told KGW.",
     connections: ["sb-1546", "koin-pride"]
   },
 
