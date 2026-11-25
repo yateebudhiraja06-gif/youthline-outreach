@@ -388,7 +388,7 @@ const entries = {
     sources: [
       ["Lines for Life announcement", "https://www.linesforlife.org/blog/page/2/"]
     ],
-    description: "“Received a $10,000 grant from the Wildhorse Foundation.” (Lines for Life)",
+    description: "The funding will help YouthLine provide Mini-grants to schools, districts, and student groups for projects that support student well-being and strengthen school communities. Grants support a range of school-based efforts, from staff training and wellness events to student-led programs and dedicated spaces for students.",
     connections: ["osbha", "jpr-southern-oregon"]
   }
 ,
