@@ -233,7 +233,7 @@ const entries = {
       "Key strength": "Building"
     },
     sources: [],
-    description: "YouthLine at the American Foundation for Suicide Prevention Walk.",
+    description: "YouthLine tabled at the American Foundation for Suicide Prevention Walk, talking with community members about what YouthLine does and distributing resources.",
     connections: ["advocacy-day", "blazers"]
   },
 
