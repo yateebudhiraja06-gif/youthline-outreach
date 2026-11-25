@@ -190,7 +190,7 @@ const entries = {
       ["Promotion on Instagram", "https://www.instagram.com/reel/DSa0hOSDH4g/"],
       ["Promotion on Facebook", "https://www.facebook.com/share/v/1Fjxj4fzWN/"]
     ],
-    description: "An ad highlighting YouthLine as a resource for LGBTQIA+ youth at the Trail Blazers' Pride Night, with a community resource feature at the game and a shoutout by KOIN News.",
+    description: "“The Community Partner of the night, YouthLine.” (Portland Trail Blazers)",
     connections: ["koin-pride", "afsp-walk", "dna-video"]
   },
 
