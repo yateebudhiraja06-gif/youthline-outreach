@@ -480,3 +480,28 @@ h2 {
     height: 70vh;
   }
 }
+/* ---------- Work with us ---------- */
+footer {
+  margin-top: 32px;
+  padding-top: 8px;
+  border-top: 1px solid var(--light-gray);
+}
+.work-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  list-style: none;
+}
+.work-links a {
+  display: inline-block;
+  padding: 8px 14px;
+  background: var(--purple);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+}
+.work-links a:hover {
+  background: var(--cyan);
+}
