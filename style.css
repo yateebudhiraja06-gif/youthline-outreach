@@ -586,3 +586,16 @@ footer .work-links:first-of-type a:hover {
     height: 70vh;
   }
 }
+
+/* Short help line at the bottom of each entry */
+.help-mini {
+  margin-top: 40px;
+  padding: 10px 12px;
+  border-left: 3px solid var(--cyan);
+  background: var(--white);
+  font-size: 13px;
+}
+.help-mini a {
+  color: var(--purple);
+  font-weight: 700;
+}

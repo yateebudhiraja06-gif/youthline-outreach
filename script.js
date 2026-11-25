@@ -316,6 +316,13 @@ document.querySelectorAll(".card").forEach(card => {
 
 document.getElementById("back").addEventListener("click", showHome);
 
+// "Get in touch" in an entry: go back to the guide view and scroll to Work with us
+document.querySelector(".context a").addEventListener("click", event => {
+  event.preventDefault();
+  showHome();
+  document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+});
+
 
 // =====================================================
 // 3. DRAGGING THE BOARD AROUND (like the reference site)
