@@ -32,6 +32,7 @@ const entries = {
     title: "KGW: Governor Signs AI Chatbot Safety Bill",
     details: {
       "Date": "May 7, 2026",
+      "Headline": "Oregon governor signs bills targeting AI chatbot safety, behavioral health workforce issues",
       "Outlet": "KGW News",
       "Type": "Press",
       "Key strength": "Advocating"
@@ -40,7 +41,7 @@ const entries = {
       ["Read on KGW", "https://www.kgw.com/article/news/politics/kotek-sign-oregon-ai-teen-mental-health-bill-safety-chatbot/283-321743ef-c1c2-49dc-bdec-da956c94704f"],
       ["Also covered by OregonLive", "https://www.oregonlive.com/politics/2026/05/new-oregon-law-will-compel-ai-chatbots-to-connect-suicidal-users-to-real-life-help.html"]
     ],
-    description: "KGW covered Governor Tina Kotek's signing of SB 1546 at a ceremony in Northeast Portland. The story featured a YouthLine volunteer who testified for the bill, explaining that many callers ask whether they are talking to AI and that young people often don't know what AI will do with what they share.",
+    description: "“AI isn’t human, and it doesn’t know what we feel.” (YouthLine volunteer Yatee, to KGW)",
     connections: ["sb-1546", "koin-pride"]
   },
 
@@ -146,14 +147,18 @@ const entries = {
   },
 
   "dc-trip": {
-    title: "Washington, D.C. Trip",
+    title: "U.S. Senate Forum on Youth Peer Crisis Support",
     details: {
-      "Venue": "Washington, D.C.",
+      "Date": "July 28, 2026",
+      "Venue": "Senate Finance Committee Hearing Room, Washington, D.C.",
+      "Host": "U.S. Senator Ron Wyden, with the National Action Alliance for Suicide Prevention",
       "Type": "Policy",
       "Key strength": "Advocating"
     },
-    sources: [],
-    description: "Details coming soon.",
+    sources: [
+      ["Lines for Life press release", "https://www.linesforlife.org/youthline-volunteers-participate-in-u-s-senate-forum-on-youth-mental-health/"]
+    ],
+    description: "“Fortunately, YouthLine has pioneered a proven model to tackle this crisis.” (U.S. Senator Ron Wyden)",
     connections: ["wyden-council", "sb-1546"]
   },
 
@@ -191,6 +196,7 @@ const entries = {
     title: "KOIN: Trail Blazers Celebrate Pride Night",
     details: {
       "Date": "December 17, 2025",
+      "Headline": "Trail Blazers Celebrate Pride Night",
       "Outlet": "KOIN 6, Everyday Northwest",
       "Type": "Press",
       "Key strength": "Building"
@@ -198,7 +204,7 @@ const entries = {
     sources: [
       ["Watch on KOIN", "https://www.koin.com/everydaynorthwest/trail-blazers-celebrate-pride-night/"]
     ],
-    description: "KOIN's Everyday Northwest previewed the Portland Trail Blazers' Celebration of Pride game and named YouthLine among the local LGBTQ2SIA+ nonprofits highlighted that night.",
+    description: "“Several local LGBTQ2SIA+ nonprofits will also be highlighted throughout the evening, including YouthLine.” (KOIN)",
     connections: ["blazers", "kgw-signing"]
   },
 
@@ -243,7 +249,7 @@ const entries = {
       ["YouthLine on Instagram", "https://www.instagram.com/theyouthline/p/DesDeGNgb6F/"]
     ],
     description: "Help us welcome YouthLine Hawaiʻi’s Cohort 4 volunteers! We’re excited to welcome this newest group of youth volunteers as they complete their training and prepare to support peers in their communities. Through their time, care, and commitment, they’re helping make sure youth have someone to turn to when they need support.",
-    connections: ["hawaii-school"]
+    connections: ["hawaii-school", "maui-imua"]
   },
 
   "dna-video": {
@@ -273,6 +279,99 @@ const entries = {
     ],
     description: "We get a lot of questions about what it’s like to reach out to YouthLine, so we created a roleplay example to show you! Whether it’s academic stress, family conflict, or relationship drama, YouthLine is here to listen.",
     connections: ["dna-video"]
+  },
+
+  "apa-monitor": {
+    title: "APA Monitor: Peer Support Crisis Line for Teens",
+    details: {
+      "Date": "July 2023",
+      "Outlet": "Monitor on Psychology, American Psychological Association",
+      "Type": "Press",
+      "Key strength": "Listening"
+    },
+    sources: [
+      ["Read on APA", "https://www.apa.org/monitor/2023/07/peer-support-crisis-line-teens"]
+    ],
+    description: "“They want to talk to somebody close or similar in age.” (YouthLine director Emily Moser)",
+    connections: ["pbs-newshour", "talent-council"]
+  },
+
+  "pbs-newshour": {
+    title: "PBS NewsHour: Teen Volunteers Staff Crisis Support Line",
+    details: {
+      "Date": "January 25, 2023",
+      "Headline": "Teen volunteers staff crisis support line to help peers facing mental health challenges",
+      "Outlet": "PBS NewsHour",
+      "Type": "Press",
+      "Key strength": "Listening"
+    },
+    sources: [
+      ["Watch on PBS", "https://www.pbs.org/newshour/show/teen-volunteers-staff-crisis-support-line-to-help-peers-facing-mental-health-challenges"]
+    ],
+    description: "“Teenagers field calls from other teenagers who are struggling.” (PBS NewsHour)",
+    connections: ["apa-monitor", "kgw-breaking-silence"]
+  },
+
+  "kgw-breaking-silence": {
+    title: "KGW: Breaking the Silence",
+    details: {
+      "Headline": "Breaking the Silence: YouthLine serves as critical resource for teens in need",
+      "Outlet": "KGW News",
+      "Type": "Press",
+      "Key strength": "Listening"
+    },
+    sources: [
+      ["Read on KGW", "https://kgw.com/article/news/breaking-the-silence-youthline-serves-as-critical-resource-for-teens-in-need/283-979b940e-cd88-4aa6-a44e-db76a3dd015f"]
+    ],
+    description: "“People just want to be heard.” (YouthLine volunteers, to KGW)",
+    connections: ["pbs-newshour", "roleplay"]
+  },
+
+  "jpr-southern-oregon": {
+    title: "JPR: YouthLine Brings Peer-Based Crisis Support to Southern Oregon",
+    details: {
+      "Date": "January 15, 2026",
+      "Headline": "YouthLine brings peer-based crisis support to southern Oregon",
+      "Outlet": "Jefferson Public Radio, The Jefferson Exchange",
+      "Type": "Press",
+      "Key strength": "Building"
+    },
+    sources: [
+      ["Listen on JPR", "https://www.ijpr.org/podcast/the-jefferson-exchange/2026-01-15/youthline-expands-to-southern-oregon"]
+    ],
+    description: "“I’m looking forward to building connections in southern Oregon.” (Pan Hamsa, YouthLine southern Oregon coordinator)",
+    connections: ["wildhorse-grant", "osbha"]
+  },
+
+  "maui-imua": {
+    title: "Maui Now: Imua Family Services and YouthLine Collaborate",
+    details: {
+      "Date": "September 6, 2025",
+      "Headline": "Imua Family Services and YouthLine collaborate on youth mental health and suicide prevention in Maui County",
+      "Outlet": "Maui Now",
+      "Type": "Press",
+      "Key strength": "Building"
+    },
+    sources: [
+      ["Read on Maui Now", "https://mauinow.com/2025/09/06/imua-family-services-and-youthline-collaborate-on-youth-mental-health-and-suicide-prevention-in-maui-county/"]
+    ],
+    description: "“YouthLine, a service of Lines for Life, is committed to addressing this pressing issue.” (Maui Now)",
+    connections: ["hawaii-cohort", "hawaii-school"]
+  },
+
+  "wildhorse-grant": {
+    title: "Wildhorse Foundation Grant for School Suicide Prevention",
+    details: {
+      "Date": "September 22, 2026",
+      "Partner": "Wildhorse Foundation",
+      "Type": "Programs",
+      "Key strength": "Building"
+    },
+    sources: [
+      ["Lines for Life announcement", "https://www.linesforlife.org/blog/page/2/"]
+    ],
+    description: "“Received a $10,000 grant from the Wildhorse Foundation.” (Lines for Life)",
+    connections: ["osbha", "jpr-southern-oregon"]
   }
 
 };
