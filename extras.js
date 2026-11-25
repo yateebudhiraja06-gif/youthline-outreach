@@ -10,7 +10,7 @@ const sizer = document.getElementById("sizer");
 const lines = document.getElementById("lines");
 
 const CANVAS_WIDTH = 1250;
-const CANVAS_HEIGHT = 1250;
+const CANVAS_HEIGHT = 1420;
 
 
 // ---------- 1. ZOOM ----------

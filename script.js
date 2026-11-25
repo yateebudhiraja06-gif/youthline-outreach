@@ -152,11 +152,13 @@ const entries = {
       "Date": "July 28, 2026",
       "Venue": "Senate Finance Committee Hearing Room, Washington, D.C.",
       "Host": "U.S. Senator Ron Wyden, with the National Action Alliance for Suicide Prevention",
+      "Volunteers": "Eight: five from Oregon, three from Maui",
       "Type": "Policy",
       "Key strength": "Advocating"
     },
     sources: [
-      ["Lines for Life press release", "https://www.linesforlife.org/youthline-volunteers-participate-in-u-s-senate-forum-on-youth-mental-health/"]
+      ["Lines for Life press release", "https://www.linesforlife.org/youthline-volunteers-participate-in-u-s-senate-forum-on-youth-mental-health/"],
+      ["Eight Teens, 14,000 Miles (Lines for Life)", "https://www.linesforlife.org/eight-teens-14000-miles-advocating-for-youth-mental-health/"]
     ],
     description: "“Fortunately, YouthLine has pioneered a proven model to tackle this crisis.” (U.S. Senator Ron Wyden)",
     connections: ["wyden-council", "sb-1546"]
@@ -373,7 +375,86 @@ const entries = {
     description: "“Received a $10,000 grant from the Wildhorse Foundation.” (Lines for Life)",
     connections: ["osbha", "jpr-southern-oregon"]
   }
+,
+  "grant-magazine": {
+    title: "Grant Magazine: On The Line",
+    details: {
+      "Date": "April 7, 2026",
+      "Outlet": "Grant Magazine, Grant High School",
+      "Type": "Press",
+      "Key strength": "Building"
+    },
+    sources: [
+      ["Read on Grant Magazine", "https://grantmagazine.com/28300/news/on-the-line/"]
+    ],
+    description: "“YouthLine, a mental health crisis line, is changing the game for youth nationwide.” (Grant Magazine)",
+    connections: ["cardinal-times", "pbs-newshour"]
+  },
 
+  "cardinal-times": {
+    title: "The Cardinal Times: A Lifeline for Students, Run by Students",
+    details: {
+      "Date": "May 20, 2025",
+      "Headline": "Youthline: A lifeline for students, run by students",
+      "Outlet": "The Cardinal Times",
+      "Type": "Press",
+      "Key strength": "Listening"
+    },
+    sources: [
+      ["Read on The Cardinal Times", "https://cardinaltimes.org/25984/news/youthline-a-lifeline-for-students-run-by-students/"]
+    ],
+    description: "“No problem is too big or too small.” (Genevieve Castle, YouthLine outreach coordinator)",
+    connections: ["grant-magazine", "kgw-breaking-silence"]
+  },
+
+  "opb-safe-social": {
+    title: "OPB Think Out Loud: Safe Social Spaces",
+    details: {
+      "Date": "July 9, 2024",
+      "Headline": "Safe Social Spaces program run by Lines for Life uses social media to help youth in crisis",
+      "Outlet": "OPB, Think Out Loud",
+      "Type": "Press",
+      "Key strength": "Listening"
+    },
+    sources: [
+      ["Listen on OPB", "https://www.opb.org/article/2024/07/10/think-out-loud-suicide-mental-health-oregon-safe-spaces/"]
+    ],
+    description: "“YouthLine is available for phone calls, texts and chats.” (OPB)",
+    connections: ["hechinger-native", "roleplay"]
+  },
+
+  "hechinger-native": {
+    title: "The Hechinger Report: A Crisis Call Line Run by Native Youth",
+    details: {
+      "Date": "April 29, 2024",
+      "Headline": "A crisis call line run by Native youth, for Native youth",
+      "Outlet": "The Hechinger Report (also published by OPB)",
+      "Type": "Press",
+      "Key strength": "Building"
+    },
+    sources: [
+      ["Read on The Hechinger Report", "https://hechingerreport.org/a-crisis-call-line-run-by-native-youth-for-native-youth/"],
+      ["Read on OPB", "https://opb.org/article/2024/04/29/oregon-crisis-call-line-native-youth"]
+    ],
+    description: "“Youthline is part of the 988 network” (The Hechinger Report)",
+    connections: ["opb-safe-social", "jpr-southern-oregon"]
+  },
+
+  "island-scene": {
+    title: "Island Scene: A New Line of Support for Youth Mental Health",
+    details: {
+      "Date": "July 7, 2026",
+      "Headline": "A new line of support for youth mental health",
+      "Outlet": "Island Scene",
+      "Type": "Press",
+      "Key strength": "Listening"
+    },
+    sources: [
+      ["Read on Island Scene", "https://islandscene.com/a-new-line-of-support-for-youth-mental-health"]
+    ],
+    description: "“You don’t have to be falling apart to ask for help.” (Island Scene)",
+    connections: ["maui-imua", "hawaii-cohort"]
+  }
 };
 
 
