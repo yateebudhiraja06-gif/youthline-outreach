@@ -250,7 +250,7 @@ const entries = {
     sources: [
       ["YouthLine on Instagram", "https://www.instagram.com/theyouthline/p/DesDeGNgb6F/"]
     ],
-    description: "Help us welcome YouthLine Hawaiʻi’s Cohort 4 volunteers! We’re excited to welcome this newest group of youth volunteers as they complete their training and prepare to support peers in their communities. Through their time, care, and commitment, they’re helping make sure youth have someone to turn to when they need support.",
+    description: "We’re excited to welcome this newest group of youth volunteers as they complete their training and prepare to support peers in their communities. Through their time, care, and commitment, they’re helping make sure youth have someone to turn to when they need support.",
     connections: ["hawaii-school", "maui-imua"]
   },
 
