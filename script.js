@@ -68,7 +68,7 @@ const entries = {
       "Key strength": "Advocating"
     },
     sources: [],
-    description: "YouthLine representatives created an advisory council to work with Senator Ron Wyden to further educate the federal government on how to help youth.",
+    description: "After two YouthLine volunteers spoke at Senator Ron Wyden’s town hall, a youth advisory council was formed to give them the ability to use their experiences to shape policy.",
     connections: ["sb-1546", "dc-trip"]
   },
 
@@ -342,7 +342,7 @@ const entries = {
       ["Watch on YouTube", "https://www.youtube.com/watch?v=_DIMfadY_Ns&t=111s"],
       ["Breaking the Silence", "https://www.breakingthesilenceor.com/"]
     ],
-    description: "KGW featured YouthLine as part of Breaking the Silence, a statewide media effort to end the silence around suicide and help prevent it, spotlighting YouthLine as a resource for teens in Portland who are struggling. “…people for whom YouthLine feels like only source of support they have,” said Gabrielle Paisner, an 18-year-old YouthLine volunteer.",
+    description: "KGW featured YouthLine as part of Breaking the Silence, a statewide media effort to end the silence around suicide and help prevent it, spotlighting YouthLine as a resource for teens in Portland who are struggling. “…people for whom YouthLine feels like only source of support they have,” said an 18-year-old YouthLine volunteer.",
     connections: ["pbs-newshour", "roleplay"]
   },
 
@@ -375,7 +375,7 @@ const entries = {
     sources: [
       ["Read on Maui Now", "https://mauinow.com/2025/09/06/imua-family-services-and-youthline-collaborate-on-youth-mental-health-and-suicide-prevention-in-maui-county/"]
     ],
-    description: "“YouthLine, a service of Lines for Life, is committed to addressing this pressing issue.” (Maui Now)",
+    description: "Youth crisis, anxiety, stress, and suicidal thoughts are rising in Hawaiʻi, where youth suicide attempt rates are above the national average and still climbing, and many young people find it hard to ask for help. Maui Now reported on YouthLine joining Imua Family Services and its partner agency, Pāʻia Youth & Cultural Center, in “a partnership aimed at enhancing the mental well-being of youth in Maui County.”",
     connections: ["hawaii-cohort", "hawaii-school"]
   },
 
@@ -435,9 +435,12 @@ const entries = {
       "Key strength": "Listening"
     },
     sources: [
-      ["Listen on OPB", "https://www.opb.org/article/2024/07/10/think-out-loud-suicide-mental-health-oregon-safe-spaces/"]
+      ["Listen on OPB", "https://www.opb.org/article/2024/07/10/think-out-loud-suicide-mental-health-oregon-safe-spaces/"],
+      ["OHSU study announcement", "https://news.ohsu.edu/2024/06/03/crisis-intervention-program-leverages-social-media-to-reduce-suicide-risk"],
+      ["Study in Psychiatric Services", "https://ps.psychiatryonline.org/doi/10.1176/appi.ps.20230299"],
+      ["Lines for Life", "https://www.linesforlife.org/"]
     ],
-    description: "“YouthLine is available for phone calls, texts and chats.” (OPB)",
+    description: "OPB’s Think Out Loud featured Safe Social Spaces, a Lines for Life youth program that works “basically like a reverse crisis line”: instead of waiting for young people to call, trained staff reach out to people on social media who may be struggling with their mental health, self-harm, or thoughts of suicide, and offer a caring ear and help working through what they’re feeling. An OHSU study published in the journal Psychiatric Services found the program may have prevented more than 160 suicide attempts since it began.",
     connections: ["hechinger-native", "roleplay"]
   },
 
