@@ -46,6 +46,8 @@ header h1 {
   font-size: 16px;
   font-weight: 700;
   color: var(--purple);
+    text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
 h2 {
