@@ -342,7 +342,7 @@ const entries = {
       ["Watch on YouTube", "https://www.youtube.com/watch?v=_DIMfadY_Ns&t=111s"],
       ["Breaking the Silence", "https://www.breakingthesilenceor.com/"]
     ],
-    description: "KGW featured YouthLine as part of Breaking the Silence, a statewide media effort to end the silence around suicide and help prevent it, spotlighting YouthLine as a resource for teens in Portland who are struggling. “…people for whom YouthLine feels like only source of support they have,” said an 18-year-old YouthLine volunteer.",
+    description: "KGW featured YouthLine as part of Breaking the Silence, a statewide media effort to end the silence around suicide and help prevent it, spotlighting YouthLine as a resource for teens in Portland who are struggling. “…people for whom YouthLine feels like only source of support they have,” said a YouthLine volunteer.",
     connections: ["pbs-newshour", "roleplay"]
   },
 
