@@ -182,7 +182,7 @@ const entries = {
       "Partner": "Portland Trail Blazers",
       "Type": "Outreach",
       "Key strength": "Building",
-      "Outcome": "Featured as a community resource for LGBTQIA+ youth"
+      "Outcome": "Named Community Partner of the night"
     },
     sources: [
       ["Trail Blazers announcement", "https://www.nba.com/blazers/news/portland-trail-blazers-host-their-pride-celebration-game-presented-by-jamba-on-december-18"],
