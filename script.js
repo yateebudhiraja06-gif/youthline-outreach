@@ -59,7 +59,7 @@ const entries = {
     details: {
       "Date": "October 23, 2025",
       "Venue": "Oregon Behavioral Health Talent Council",
-      "Type": "Talk",
+      "Type": "Policy",
       "Key strength": "Building"
     },
     sources: [
@@ -75,7 +75,7 @@ const entries = {
     details: {
       "Date": "November 12, 2025",
       "Partner": "Song for Charlie",
-      "Type": "Panel",
+      "Type": "Professional",
       "Key strength": "Listening"
     },
     sources: [
@@ -90,7 +90,7 @@ const entries = {
     details: {
       "Date": "November 2026",
       "Partner": "Song for Charlie",
-      "Type": "Panel",
+      "Type": "Professional",
       "Key strength": "Advocating"
     },
     sources: [
@@ -105,7 +105,7 @@ const entries = {
     details: {
       "Date": "September 2026",
       "Venue": "Nashville, Tennessee",
-      "Type": "Conference",
+      "Type": "Professional",
       "Key strength": "Building"
     },
     sources: [
@@ -120,7 +120,7 @@ const entries = {
     details: {
       "Date": "May 18–19, 2026",
       "Partner": "Oregon School-Based Health Alliance",
-      "Type": "Conference",
+      "Type": "Professional",
       "Key strength": "Building"
     },
     sources: [],
@@ -143,7 +143,7 @@ const entries = {
   "bh-webinar": {
     title: "Behavioral Health Webinar",
     details: {
-      "Type": "Talk",
+      "Type": "Professional",
       "Key strength": "Advocating"
     },
     sources: [],
@@ -203,7 +203,7 @@ const entries = {
     details: {
       "Date": "October 2026",
       "Venue": "Hawaiʻi",
-      "Type": "Training",
+      "Type": "Programs",
       "Key strength": "Building",
       "Outcome": "A fourth cohort of youth volunteers trained"
     },
@@ -219,7 +219,7 @@ const entries = {
     details: {
       "Date": "November 2025",
       "Partner": "DNA PDX",
-      "Type": "Media",
+      "Type": "Programs",
       "Key strength": "Listening"
     },
     sources: [
@@ -233,7 +233,7 @@ const entries = {
     title: "What It's Like to Reach Out",
     details: {
       "Date": "January 2026",
-      "Type": "Media",
+      "Type": "Programs",
       "Key strength": "Listening"
     },
     sources: [
