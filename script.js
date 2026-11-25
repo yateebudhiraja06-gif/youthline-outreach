@@ -179,7 +179,7 @@ const entries = {
       ["Behavioral Health Tech Insider Sessions", "https://www.behavioralhealthtech.com/insider-sessions"],
       ["Watch on demand", "https://us06web.zoom.us/webinar/register/6717878039488/WN_IOYVTSy1Q4KafZDZXPNtBg"]
     ],
-    description: "YouthLine's Morgan Leets and volunteer Yatee joined a national Behavioral Health Tech webinar on building youth behavioral health support that reaches every young person. They spoke alongside leaders from Somethings, Penn Medicine, and YouthCare Health Choice Illinois.",
+    description: "YouthLine's Morgan Leets and volunteer Yatee joined a national Behavioral Health Tech webinar on building youth behavioral health support that reaches every young person. They spoke alongside leaders from Somethings, Penn Medicine, and YouthCare Health Choice Illinois. “Metrics are important, but they’re not going to tell you the whole story,” said a YouthLine volunteer.",
     connections: ["bh-tech", "talent-council"]
   },
 
