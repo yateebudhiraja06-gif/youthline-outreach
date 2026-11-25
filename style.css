@@ -90,3 +90,50 @@ h2 {
   padding-left: 12px;
   border-left: 3px solid var(--cyan);
 }
+/* All cards: placed freely on the board, slightly tilted */
+.card {
+  position: absolute;
+  width: 200px;
+  padding: 12px;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  transform: rotate(var(--tilt));
+  box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+  transition: transform 0.2s;
+}
+/* On hover, the card straightens and lifts */
+.card:hover,
+.card:focus {
+  transform: rotate(0deg) scale(1.05);
+  z-index: 10;
+}
+
+/* Note cards: cream paper + typewriter font */
+.note {
+  background: #EEE3D2;   /* Lines for Life Off-White */
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.note.pink {
+  background: #E9C9C0;
+}
+
+/* Photo cards: white frame like a polaroid */
+.photo {
+  background: #F2F2F2;
+}
+.img-placeholder {
+  height: 140px;
+  background: #9a9a9a;
+}
+
+/* Small label under each card */
+.tag {
+  display: block;
+  margin-top: 10px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  color: var(--grey);
+}
