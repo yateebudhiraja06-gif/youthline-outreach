@@ -182,10 +182,6 @@ const entries = {
     description: "YouthLine's Morgan Leets and volunteer Yatee joined a national Behavioral Health Tech webinar on building youth behavioral health support that reaches every young person. They spoke alongside leaders from Somethings, Penn Medicine, and YouthCare Health Choice Illinois.",
     connections: ["bh-tech", "talent-council"]
   },
-    sources: [],
-    description: "Details coming soon.",
-    connections: ["talent-council"]
-  },
 
   "blazers": {
     title: "Trail Blazers Pride Night",
