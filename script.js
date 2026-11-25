@@ -131,9 +131,10 @@ const entries = {
     },
     sources: [
       ["Conference agenda (BHT2026)", "https://45392274.fs1.hubspotusercontent-na1.net/hubfs/45392274/BHT2026/BHT2026%20Agenda.pdf"],
+      ["Conference reflections (BHT Impact)", "https://www.bhtimpact.org/post/reflections-on-youth-leadership-peer-support-and-co-design-at-behavioral-health-tech-2026"],
       ["YouthLine on Instagram", "https://www.instagram.com/theyouthline/p/De0OF54Eqrc/"]
     ],
-    description: "Two of our amazing YouthLine volunteers and two staff members attended the Behavioral Health Tech Conference in Nashville, TN! They connected with advocates and organizations working to make mental health care more accessible and equitable for everyone. A YouthLine volunteer also spoke on the panel “Schools Can’t Do This Alone - But They Can’t Opt Out Either.”",
+    description: "Two of our amazing YouthLine volunteers and two staff members attended the Behavioral Health Tech Conference in Nashville, TN! They connected with advocates and organizations working to make mental health care more accessible and equitable for everyone. A YouthLine volunteer also spoke on the panel “Schools Can’t Do This Alone - But They Can’t Opt Out Either.” Reflecting on the conference, BHT Impact correspondent Anika Nayak wrote, “Young people aren’t waiting for someone else to build those relationships for them.”",
     connections: ["talent-council", "bh-webinar", "osbha"]
   },
 
