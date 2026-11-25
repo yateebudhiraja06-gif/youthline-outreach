@@ -25,7 +25,23 @@ const entries = {
       ["OregonLive: New Oregon law will compel AI chatbots to connect suicidal users to real-life help", "https://www.oregonlive.com/politics/2026/05/new-oregon-law-will-compel-ai-chatbots-to-connect-suicidal-users-to-real-life-help.html"]
     ],
     description: "Some callers asked volunteers whether they were AI, showing concern over who they talked to. SB 1546 requires operators of artificial intelligence companions and artificial intelligence companion platforms to provide notice to users that they are talking to AI, and not a human. When a user indicates suicidal ideation or self-harm, the operator must identify it and refer the user to appropriate mental health resources like YouthLine and 988. SB 1546 turns risk into opportunity. An opportunity to intervene. A YouthLine volunteer testified in support of it, and volunteers were there when Governor Tina Kotek signed it into law.",
-    connections: ["advocacy-day", "wyden-council"]
+    connections: ["kgw-signing", "advocacy-day", "wyden-council"]
+  },
+
+  "kgw-signing": {
+    title: "KGW: Governor Signs AI Chatbot Safety Bill",
+    details: {
+      "Date": "May 7, 2026",
+      "Outlet": "KGW News",
+      "Type": "Press",
+      "Key strength": "Advocating"
+    },
+    sources: [
+      ["Read on KGW", "https://www.kgw.com/article/news/politics/kotek-sign-oregon-ai-teen-mental-health-bill-safety-chatbot/283-321743ef-c1c2-49dc-bdec-da956c94704f"],
+      ["Also covered by OregonLive", "https://www.oregonlive.com/politics/2026/05/new-oregon-law-will-compel-ai-chatbots-to-connect-suicidal-users-to-real-life-help.html"]
+    ],
+    description: "KGW covered Governor Tina Kotek's signing of SB 1546 at a ceremony in Northeast Portland. The story featured a YouthLine volunteer who testified for the bill, explaining that many callers ask whether they are talking to AI and that young people often don't know what AI will do with what they share.",
+    connections: ["sb-1546", "advocacy-day"]
   },
 
   "advocacy-day": {
