@@ -23,6 +23,7 @@
   /* Accents */
   --light-blue: #CCE7EF;
   --light-purple: #ECEAF4;
+  --light-green: #D8EEE9;
 }
 
 /* ---------- Page layout: board on the left, panel on the right ---------- */
@@ -121,12 +122,43 @@ h2 {
   color: var(--cerebral-grey);
 }
 
+/* ---------- Guide heading + theme labels ---------- */
+.guide-title {
+  color: var(--purple);
+}
+
+/* Each theme gets its own small colored label, using guide accent colors
+   with dark text so it stays easy to read */
+.theme {
+  display: inline-block;
+  margin-right: 6px;
+  padding: 1px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.theme.listening {
+  background: var(--light-blue);
+  color: var(--cobalt);
+}
+.theme.advocating {
+  background: var(--light-purple);
+  color: var(--purple);
+}
+.theme.building {
+  background: var(--light-green);
+  color: var(--navy);
+}
+
 .hint {
   font-size: 13px;
   color: var(--cerebral-grey);
   font-style: italic;
 }
 
+/* ---------- Need help now ---------- */
 .help {
   margin-top: 24px;
   padding-left: 12px;
@@ -139,6 +171,80 @@ h2 {
 .help-links a {
   color: var(--purple);
   font-weight: 700;
+}
+
+/* ---------- Work with us ---------- */
+footer {
+  margin-top: 40px;
+  padding-top: 8px;
+  border-top: 1px solid var(--light-gray);
+}
+
+/* Group names: small uppercase labels, like the rest of the panel */
+.work-group {
+  margin: 24px 0 4px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--cerebral-grey);
+}
+
+/* Each link is a clean row with a thin line under it and an arrow on the right */
+.work-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.work-links a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--light-gray);
+  color: var(--matte-black);
+  font-size: 15px;
+  text-decoration: none;
+  transition: color 0.2s, padding 0.2s;
+}
+.work-links a::after {
+  content: "↗";               /* means "opens another site" */
+  color: var(--purple);
+  font-size: 14px;
+}
+.work-links a:hover {
+  color: var(--purple);
+  padding-left: 6px;
+}
+.work-links a:hover::after {
+  color: var(--cyan);
+}
+
+/* The one main action, Donate, gets a solid purple bar */
+footer .work-links:first-of-type a {
+  margin-top: 4px;
+  padding: 12px 16px;
+  border-bottom: none;
+  background: var(--purple);
+  color: var(--white);
+  font-weight: 700;
+}
+footer .work-links:first-of-type a::after {
+  color: var(--white);
+}
+footer .work-links:first-of-type a:hover {
+  background: var(--navy);
+  padding-left: 16px;
+}
+
+.contact-info {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--cerebral-grey);
+}
+.contact-info a {
+  color: var(--purple);
 }
 
 /* ---------- Cards ---------- */
@@ -479,42 +585,4 @@ h2 {
     flex: none;
     height: 70vh;
   }
-}
-/* ---------- Work with us ---------- */
-footer {
-  margin-top: 32px;
-  padding-top: 8px;
-  border-top: 1px solid var(--light-gray);
-}
-.work-group {
-  margin: 18px 0 6px;
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--purple);
-}
-.work-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.work-links a {
-  display: inline-block;
-  padding: 8px 14px;
-  background: var(--purple);
-  color: var(--white);
-  font-weight: 700;
-  font-size: 14px;
-  text-decoration: none;
-}
-.work-links a:hover {
-  background: var(--cyan);
-}
-.contact-info {
-  font-size: 14px;
-}
-.contact-info a {
-  color: var(--purple);
 }
