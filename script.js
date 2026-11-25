@@ -126,7 +126,7 @@ const entries = {
       "YouthLine panel": "“Schools Can’t Do This Alone - But They Can’t Opt Out Either,” September 24, 2026, Youth & Young Adults track",
       "Moderator": "Alison Malmon, Active Minds",
       "Also on the panel": "Alicia Ead (The Bradley Learning Exchange); Lauren Carson (Black Girls Smile); Gabi Green",
-      "Also at the conference": "“Ask a Teen” counter; “Measure What Matters” workshop",
+      "Also at the conference": "“Ask a Teen” counter; helped lead the “Measure What Matters” workshop",
       "Type": "Professional",
       "Key strength": "Building"
     },
@@ -135,7 +135,7 @@ const entries = {
       ["Conference reflections (BHT Impact)", "https://www.bhtimpact.org/post/reflections-on-youth-leadership-peer-support-and-co-design-at-behavioral-health-tech-2026"],
       ["YouthLine on Instagram", "https://www.instagram.com/theyouthline/p/De0OF54Eqrc/"]
     ],
-    description: "Two of our amazing YouthLine volunteers and two staff members attended the Behavioral Health Tech Conference in Nashville, TN! They connected with advocates and organizations working to make mental health care more accessible and equitable for everyone. A YouthLine volunteer also spoke on the panel “Schools Can’t Do This Alone - But They Can’t Opt Out Either,” saying, “Instead of waiting for students to talk about their problems, schools can meet them in the middle.” YouthLine volunteers also helped run an “Ask a Teen” counter, where adults could ask teens questions about mental health and their experiences, and a volunteer took part in the workshop “Measure What Matters: Building an Actionable Measurement Strategy in Youth Behavioral Health.” Reflecting on the conference, BHT Impact correspondent Anika Nayak wrote, “Young people aren’t waiting for someone else to build those relationships for them.”",
+    description: "Two of our amazing YouthLine volunteers and two staff members attended the Behavioral Health Tech Conference in Nashville, TN! They connected with advocates and organizations working to make mental health care more accessible and equitable for everyone. A YouthLine volunteer also spoke on the panel “Schools Can’t Do This Alone - But They Can’t Opt Out Either,” saying, “Instead of waiting for students to talk about their problems, schools can meet them in the middle.” YouthLine volunteers also helped run an “Ask a Teen” counter, where adults could ask teens questions about mental health and their experiences, and a volunteer helped lead part of the workshop “Measure What Matters: Building an Actionable Measurement Strategy in Youth Behavioral Health,” answering participants’ questions. Reflecting on the conference, BHT Impact correspondent Anika Nayak wrote, “Young people aren’t waiting for someone else to build those relationships for them.”",
     connections: ["talent-council", "bh-webinar", "osbha"]
   },
 
