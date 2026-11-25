@@ -1,5 +1,6 @@
 // =====================================================
-// EXTRAS: zooming + curved lines between connected cards
+// EXTRAS: zooming, the big circle, and curved lines
+// between connected cards
 // This file works alongside script.js. It uses the
 // "entries" list from script.js to know what connects.
 // =====================================================
@@ -8,8 +9,8 @@ const canvas = document.getElementById("canvas");
 const sizer = document.getElementById("sizer");
 const lines = document.getElementById("lines");
 
-const CANVAS_WIDTH = 1400;
-const CANVAS_HEIGHT = 1300;
+const CANVAS_WIDTH = 1250;
+const CANVAS_HEIGHT = 1150;
 
 
 // ---------- 1. ZOOM ----------
@@ -56,7 +57,12 @@ board.addEventListener("wheel", event => {
   setZoom(zoom * (1 - event.deltaY * 0.01), event.clientX - rect.left, event.clientY - rect.top);
 }, { passive: false });
 
-setZoom(1);
+// When the page opens: zoom out so most of the board (and the big circle) shows,
+// but not so far that the cards get too small to read, then center it
+const fitZoom = Math.min(board.clientWidth / CANVAS_WIDTH, board.clientHeight / CANVAS_HEIGHT);
+setZoom(Math.max(fitZoom, 0.6));
+board.scrollLeft = (CANVAS_WIDTH * zoom - board.clientWidth) / 2;
+board.scrollTop = (CANVAS_HEIGHT * zoom - board.clientHeight) / 2;
 
 
 // ---------- 2. CURVED LINES ----------
@@ -87,7 +93,7 @@ function pointOnCurve(a, c, b, t) {
 }
 
 // Is a point inside a card's box? (plus a little extra room, so the
-// circle sits just outside the card and its cyan outline)
+// circle sits just outside the card and its outline)
 function isInside(point, card) {
   const room = 10;
   return point.x > card.offsetLeft - room && point.x < card.offsetLeft + card.offsetWidth + room &&
@@ -104,13 +110,40 @@ function edgeOf(card, a, c, b, fromStart) {
   return fromStart ? a : b;
 }
 
+// A big circle with a few dots on it, like the one on apossible
+function drawRing(center, radius, dotAngles) {
+  lines.innerHTML += `<circle class="ring" cx="${center.x}" cy="${center.y}" r="${radius}"/>`;
+  for (const angle of dotAngles) {
+    const radians = angle * Math.PI / 180;
+    const x = center.x + radius * Math.cos(radians);
+    const y = center.y + radius * Math.sin(radians);
+    lines.innerHTML += `<circle class="dot" cx="${x}" cy="${y}" r="5"/>`;
+  }
+}
+
 function drawLines() {
   lines.innerHTML = "";
   const active = document.querySelector(".card.active");
-  if (!active) return;                 // no card selected: no lines
+
+  // No card selected (when the page opens): one big circle around the middle of the board
+  if (!active) {
+    drawRing({ x: CANVAS_WIDTH / 2, y: CANVAS_HEIGHT / 2 - 40 }, 400, [-60, 70, 190]);
+    return;
+  }
 
   const start = centerOf(active);
   const entry = entries[active.dataset.entry];
+
+  // A card is selected: a circle around it, reaching out toward its connections
+  const others = entry.connections
+    .map(name => document.querySelector(`.card[data-entry="${name}"]`))
+    .filter(card => card);
+  let radius = 260;
+  if (others.length > 0) {
+    const distances = others.map(card => Math.hypot(centerOf(card).x - start.x, centerOf(card).y - start.y));
+    radius = distances.reduce((a, b) => a + b, 0) / distances.length;
+  }
+  drawRing(start, Math.min(Math.max(radius, 180), 480), []);
 
   for (const name of entry.connections) {
     const other = document.querySelector(`.card[data-entry="${name}"]`);
@@ -124,8 +157,8 @@ function drawLines() {
 
     lines.innerHTML +=
       `<path d="M ${start.x} ${start.y} Q ${bendPoint.x} ${bendPoint.y} ${end.x} ${end.y}"/>` +
-      `<circle cx="${dot1.x}" cy="${dot1.y}" r="5"/>` +
-      `<circle cx="${dot2.x}" cy="${dot2.y}" r="5"/>`;
+      `<circle class="dot" cx="${dot1.x}" cy="${dot1.y}" r="5"/>` +
+      `<circle class="dot" cx="${dot2.x}" cy="${dot2.y}" r="5"/>`;
   }
 }
 
@@ -135,3 +168,6 @@ const watcher = new MutationObserver(drawLines);
 document.querySelectorAll(".card").forEach(card => {
   watcher.observe(card, { attributes: true, attributeFilter: ["class"] });
 });
+
+// Draw the big circle as soon as the page opens
+drawLines();

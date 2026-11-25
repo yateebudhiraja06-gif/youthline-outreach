@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Libre+Caslon+Text&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
 
@@ -17,92 +17,81 @@
     <div class="sizer" id="sizer">
     <div class="canvas" id="canvas">
 
-      <!-- Curved lines between connected cards are drawn in here -->
-      <svg class="lines" id="lines" width="1400" height="1300" aria-hidden="true"></svg>
+      <!-- The big circle and the curved lines are drawn in here -->
+      <svg class="lines" id="lines" width="1250" height="1150" aria-hidden="true"></svg>
 
-
-      <!-- Row 1 -->
-      <button class="card note" data-entry="sb-1546" style="top: 60px; left: 70px; --tilt: -3deg;">
+      <!-- Top -->
+      <button class="card note wide" data-entry="sb-1546" style="top: 70px; left: 60px; --tilt: -3deg;">
         <p>“What isn’t human, doesn’t understand humans.”</p>
         <span class="tag">◇ Policy</span>
       </button>
-
-      <button class="card photo" data-entry="blazers" aria-label="Trail Blazers Pride Night" style="top: 40px; left: 420px; --tilt: 2deg;">
-        <div class="img-placeholder"></div>
+      <button class="card photo wide" data-entry="blazers" style="top: 30px; left: 330px; --tilt: 2deg;">
+        <div class="img-placeholder"><span>Trail Blazers Pride Night</span></div>
         <span class="tag">○ Outreach</span>
       </button>
-
-      <button class="card note pink" data-entry="unplugged" style="top: 90px; left: 760px; --tilt: -1deg;">
+      <button class="card note purple" data-entry="unplugged" style="top: 130px; left: 615px; --tilt: -2deg;">
+        <span class="badge">New</span>
         <p>“Youth are the experts this field needs.”</p>
         <span class="tag">■ Panel</span>
       </button>
-
-      <button class="card photo" data-entry="hawaii-cohort" aria-label="YouthLine Hawai'i Cohort 4" style="top: 50px; left: 1100px; --tilt: 3deg;">
-        <div class="img-placeholder"></div>
+      <button class="card photo tall" data-entry="hawaii-cohort" style="top: 40px; left: 820px; --tilt: 3deg;">
+        <div class="img-placeholder"><span>YouthLine Hawai‘i Cohort 4</span></div>
         <span class="tag">✦ Training</span>
       </button>
-
-      <!-- Row 2 -->
-      <button class="card photo" data-entry="advocacy-day" aria-label="AFSP Advocacy Day" style="top: 360px; left: 40px; --tilt: -2deg;">
-        <div class="img-placeholder"></div>
-        <span class="tag">◇ Policy</span>
+      <button class="card note small" data-entry="bh-webinar" style="top: 170px; left: 1040px; --tilt: -1deg;">
+        <p>Behavioral Health Webinar</p>
+        <span class="tag">■ Talk</span>
       </button>
 
-      <button class="card note pink" data-entry="talent-council" style="top: 380px; left: 400px; --tilt: 1deg;">
+      <!-- Middle -->
+      <button class="card photo" data-entry="advocacy-day" style="top: 310px; left: 30px; --tilt: -2deg;">
+        <div class="img-placeholder"><span>AFSP Advocacy Day</span></div>
+        <span class="tag">◇ Policy</span>
+      </button>
+      <button class="card note purple" data-entry="talent-council" style="top: 350px; left: 265px; --tilt: 1.5deg;">
         <p>“By being there. By being present.”</p>
         <span class="tag">■ Talk</span>
       </button>
-
-      <button class="card photo" data-entry="bh-tech" aria-label="Behavioral Health Tech Conference" style="top: 340px; left: 730px; --tilt: -2.5deg;">
-        <div class="img-placeholder"></div>
+      <button class="card photo wide" data-entry="bh-tech" style="top: 300px; left: 470px; --tilt: -1.5deg;">
+        <div class="img-placeholder"><span>Behavioral Health Tech Conference</span></div>
         <span class="tag">△ Conference</span>
       </button>
-
-      <button class="card note" data-entry="dna-video" style="top: 400px; left: 1090px; --tilt: 2deg;">
+      <button class="card note" data-entry="dna-video" style="top: 400px; left: 765px; --tilt: 2deg;">
         <p>“Talk with another young person who listens, understands, and cares.”</p>
         <span class="tag">□ Media</span>
       </button>
+      <button class="card photo" data-entry="hawaii-school" style="top: 340px; left: 990px; --tilt: -2.5deg;">
+        <span class="badge">New</span>
+        <div class="img-placeholder"><span>YouthLine Hawai‘i School Visit</span></div>
+        <span class="tag">○ Outreach</span>
+      </button>
 
-      <!-- Row 3 -->
-      <button class="card note" data-entry="new-drug-talk" style="top: 680px; left: 80px; --tilt: 1.5deg;">
+      <!-- Lower -->
+      <button class="card note wide" data-entry="new-drug-talk" style="top: 600px; left: 70px; --tilt: 1.5deg;">
         <p>“The way adults respond can determine whether we feel comfortable coming to them again.”</p>
         <span class="tag">■ Panel</span>
       </button>
-
-      <button class="card photo" data-entry="hawaii-school" aria-label="YouthLine Hawai'i school visit" style="top: 650px; left: 430px; --tilt: -1.5deg;">
-        <div class="img-placeholder"></div>
-        <span class="tag">○ Outreach</span>
-      </button>
-
-      <button class="card note" data-entry="wyden-council" style="top: 700px; left: 770px; --tilt: 2.5deg;">
+      <button class="card note" data-entry="wyden-council" style="top: 650px; left: 370px; --tilt: -2deg;">
         <p>Bringing youth voices to federal mental health policy.</p>
         <span class="tag">◇ Policy</span>
       </button>
-
-      <button class="card photo" data-entry="afsp-walk" aria-label="AFSP Walk" style="top: 660px; left: 1110px; --tilt: -2deg;">
-        <div class="img-placeholder"></div>
+      <button class="card photo tall" data-entry="afsp-walk" style="top: 570px; left: 590px; --tilt: 2deg;">
+        <div class="img-placeholder"><span>AFSP Walk</span></div>
         <span class="tag">○ Outreach</span>
       </button>
-
-      <!-- Row 4 -->
-      <button class="card photo" data-entry="osbha" aria-label="Oregon School-Based Health Alliance Conference" style="top: 960px; left: 60px; --tilt: 2deg;">
-        <div class="img-placeholder"></div>
+      <button class="card photo" data-entry="osbha" style="top: 630px; left: 830px; --tilt: -1deg;">
+        <div class="img-placeholder"><span>Oregon School-Based Health Alliance Conference</span></div>
         <span class="tag">△ Conference</span>
       </button>
 
-      <button class="card note pink" data-entry="roleplay" style="top: 990px; left: 420px; --tilt: -2deg;">
+      <!-- Bottom -->
+      <button class="card note small purple" data-entry="roleplay" style="top: 890px; left: 210px; --tilt: -2deg;">
         <p>“YouthLine is here to listen.”</p>
         <span class="tag">□ Media</span>
       </button>
-
-      <button class="card photo" data-entry="dc-trip" aria-label="Washington, D.C. trip" style="top: 950px; left: 760px; --tilt: 1deg;">
-        <div class="img-placeholder"></div>
+      <button class="card photo wide" data-entry="dc-trip" style="top: 860px; left: 440px; --tilt: 1deg;">
+        <div class="img-placeholder"><span>Washington, D.C. Trip</span></div>
         <span class="tag">◇ Policy</span>
-      </button>
-
-      <button class="card note" data-entry="bh-webinar" style="top: 1000px; left: 1100px; --tilt: -1deg;">
-        <p>Behavioral Health Webinar</p>
-        <span class="tag">■ Talk</span>
       </button>
 
     </div>
@@ -116,7 +105,6 @@
     <button id="zoom-fit" aria-label="Fit the whole board on screen">Fit</button>
   </div>
   </div>
-
 
   <!-- RIGHT: the panel -->
   <aside class="panel" id="panel">
@@ -172,7 +160,7 @@
     </footer>
   </aside>
 
-  <script src="script.js?v=2"></script>
-    <script src="extras.js?v=2"></script>
+  <script src="script.js?v=1"></script>
+  <script src="extras.js?v=3"></script>
 </body>
 </html>
