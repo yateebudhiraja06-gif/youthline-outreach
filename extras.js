@@ -9,8 +9,8 @@ const canvas = document.getElementById("canvas");
 const sizer = document.getElementById("sizer");
 const lines = document.getElementById("lines");
 
-const CANVAS_WIDTH = 1080;
-const CANVAS_HEIGHT = 1210;
+const CANVAS_WIDTH = 1150;
+const CANVAS_HEIGHT = 1300;
 
 
 // ---------- 1. ZOOM ----------
@@ -207,7 +207,7 @@ function drawLines() {
   // No card selected (when the page opens): one big circle around the middle of the board
   if (!active) {
     canvas.classList.remove("focused");
-    drawRing({ x: CANVAS_WIDTH / 2, y: CANVAS_HEIGHT / 2 - 40 }, 340, [135, -60, 40]);
+    drawRing({ x: CANVAS_WIDTH / 2, y: CANVAS_HEIGHT / 2 - 40 }, 360, [135, -60, 40]);
     return;
   }
 
