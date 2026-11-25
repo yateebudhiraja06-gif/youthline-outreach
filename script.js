@@ -99,7 +99,7 @@ const entries = {
     sources: [
       ["The New Drug Talk: Oregon resources", "https://www.thenewdrugtalk.org/resources/oregon"]
     ],
-    description: "Talking to adults can be intimidating; they have their stories to tell, judgments to share, and advice to offer. When it comes to sensitive topics like substance use, stress, or mental health, the way adults respond can determine whether we feel comfortable coming to them again in the future.",
+    description: "A YouthLine volunteer presented why teens might find it difficult to tell adults about things like suicide and self-harm, as well as ways adults can approach those talks with understanding rather than judgment.",
     connections: ["unplugged", "talent-council"]
   },
 
