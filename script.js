@@ -338,9 +338,11 @@ const entries = {
       "Key strength": "Listening"
     },
     sources: [
-      ["Read on KGW", "https://kgw.com/article/news/breaking-the-silence-youthline-serves-as-critical-resource-for-teens-in-need/283-979b940e-cd88-4aa6-a44e-db76a3dd015f"]
+      ["Read on KGW", "https://kgw.com/article/news/breaking-the-silence-youthline-serves-as-critical-resource-for-teens-in-need/283-979b940e-cd88-4aa6-a44e-db76a3dd015f"],
+      ["Watch on YouTube", "https://www.youtube.com/watch?v=_DIMfadY_Ns&t=111s"],
+      ["Breaking the Silence", "https://www.breakingthesilenceor.com/"]
     ],
-    description: "“People just want to be heard.” (YouthLine volunteers, to KGW)",
+    description: "KGW featured YouthLine as part of Breaking the Silence, a statewide media effort to end the silence around suicide and help prevent it, spotlighting YouthLine as a resource for teens in Portland who are struggling. “…people for whom YouthLine feels like only source of support they have,” said Gabrielle Paisner, an 18-year-old YouthLine volunteer.",
     connections: ["pbs-newshour", "roleplay"]
   },
 
