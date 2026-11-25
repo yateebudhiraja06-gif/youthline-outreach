@@ -15,15 +15,16 @@ const entries = {
       "Venue": "Oregon Senate Committee on Early Childhood and Behavioral Health",
       "Type": "Policy",
       "Key strength": "Advocating",
-      "Outcome": "Signed into law by Governor Tina Kotek"
+      "Outcome": "Signed into law by Governor Tina Kotek on May 7, 2026"
     },
     sources: [
+      ["Enrolled bill text", "https://olis.oregonlegislature.gov/liz/2026R1/Downloads/MeasureDocument/SB1546"],
       ["Bill overview (OLIS)", "https://olis.oregonlegislature.gov/liz/2026R1/Measures/Overview/sb1546"],
-      ["Staff measure summary", "https://olis.oregonlegislature.gov/liz/2026R1/Downloads/CommitteeMeetingDocument/311846"],
       ["Committee recording", "https://olis.oregonlegislature.gov/liz/2026R1/Downloads/RecordingLog/SECBH/2026-02-05-08-00"],
-      ["TCAI bill guide", "https://www.transparencycoalition.ai/news/guide-to-oregon-ai-chatbot-safety-bill-sb1546"]
+      ["KGW: Oregon governor signs bills targeting AI chatbot safety", "https://www.kgw.com/article/news/politics/kotek-sign-oregon-ai-teen-mental-health-bill-safety-chatbot/283-321743ef-c1c2-49dc-bdec-da956c94704f"],
+      ["OregonLive: New Oregon law will compel AI chatbots to connect suicidal users to real-life help", "https://www.oregonlive.com/politics/2026/05/new-oregon-law-will-compel-ai-chatbots-to-connect-suicidal-users-to-real-life-help.html"]
     ],
-    description: "It is crucial that we take action and use Senate Bill 1546 to turn risk into an opportunity to intervene. An example of this can be requiring chatbots to send links to services like 988 and YouthLine to users once mental health concerns are detected. These can let volunteers with programs that are specialized in providing care take over and get people the support they need.",
+    description: "Some callers asked volunteers whether they were AI, showing concern over who they talked to. SB 1546 requires operators of artificial intelligence companions and artificial intelligence companion platforms to provide notice to users that they are talking to AI, and not a human. When a user indicates suicidal ideation or self-harm, the operator must identify it and refer the user to appropriate mental health resources like YouthLine and 988. SB 1546 turns risk into opportunity. An opportunity to intervene. A YouthLine volunteer testified in support of it, and volunteers were there when Governor Tina Kotek signed it into law.",
     connections: ["advocacy-day", "wyden-council"]
   },
 
