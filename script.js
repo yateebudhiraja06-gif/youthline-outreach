@@ -41,7 +41,7 @@ const entries = {
       ["Also covered by OregonLive", "https://www.oregonlive.com/politics/2026/05/new-oregon-law-will-compel-ai-chatbots-to-connect-suicidal-users-to-real-life-help.html"]
     ],
     description: "KGW covered Governor Tina Kotek's signing of SB 1546 at a ceremony in Northeast Portland. The story featured a YouthLine volunteer who testified for the bill, explaining that many callers ask whether they are talking to AI and that young people often don't know what AI will do with what they share.",
-    connections: ["sb-1546", "advocacy-day"]
+    connections: ["sb-1546", "koin-pride"]
   },
 
   "advocacy-day": {
@@ -184,7 +184,22 @@ const entries = {
       ["Promotion on Facebook", "https://www.facebook.com/share/v/1Fjxj4fzWN/"]
     ],
     description: "An ad highlighting YouthLine as a resource for LGBTQIA+ youth at the Trail Blazers' Pride Night, with a community resource feature at the game and a shoutout by KOIN News.",
-    connections: ["afsp-walk", "dna-video"]
+    connections: ["koin-pride", "afsp-walk", "dna-video"]
+  },
+
+  "koin-pride": {
+    title: "KOIN: Trail Blazers Celebrate Pride Night",
+    details: {
+      "Date": "December 17, 2025",
+      "Outlet": "KOIN 6, Everyday Northwest",
+      "Type": "Press",
+      "Key strength": "Building"
+    },
+    sources: [
+      ["Watch on KOIN", "https://www.koin.com/everydaynorthwest/trail-blazers-celebrate-pride-night/"]
+    ],
+    description: "KOIN's Everyday Northwest previewed the Portland Trail Blazers' Celebration of Pride game and named YouthLine among the local LGBTQ2SIA+ nonprofits highlighted that night.",
+    connections: ["blazers", "kgw-signing"]
   },
 
   "afsp-walk": {
