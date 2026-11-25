@@ -41,7 +41,7 @@ const entries = {
       ["Read on KGW", "https://www.kgw.com/article/news/politics/kotek-sign-oregon-ai-teen-mental-health-bill-safety-chatbot/283-321743ef-c1c2-49dc-bdec-da956c94704f"],
       ["Also covered by OregonLive", "https://www.oregonlive.com/politics/2026/05/new-oregon-law-will-compel-ai-chatbots-to-connect-suicidal-users-to-real-life-help.html"]
     ],
-    description: "“AI isn’t human, and it doesn’t know what we feel.” (YouthLine volunteer Yatee, to KGW)",
+    description: "“AI isn’t human, and it doesn’t know what we feel.” (YouthLine volunteer, to KGW)",
     connections: ["sb-1546", "koin-pride"]
   },
 
@@ -170,7 +170,7 @@ const entries = {
       "Date": "September 15, 2026",
       "Host": "Behavioral Health Tech Insider Sessions, in partnership with Somethings",
       "Session": "Beyond the Barriers: Building Youth Behavioral Health Support That Actually Reaches Everyone",
-      "YouthLine speakers": "Morgan Leets, MEd, Deputy Director of Youth Development, Training, and Quality Assurance; Yatee, YouthLine Volunteer",
+      "YouthLine speakers": "Morgan Leets, MEd, Deputy Director of Youth Development, Training, and Quality Assurance; a YouthLine volunteer",
       "Also on the panel": "Amber W. Childs, Ph.D (Somethings); Kelsie Okamura (Penn Medicine); Marc Fagan, Psy.D (YouthCare Health Choice Illinois)",
       "Type": "Professional",
       "Key strength": "Advocating"
