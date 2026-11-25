@@ -60,6 +60,7 @@ body {
 /* The sizer tells the board how big the zoomed canvas is, so scrolling still works */
 .sizer {
   position: relative;
+  margin: 0 auto;          /* when zoomed out, keep the cards centered */
 }
 .canvas {
   position: relative;

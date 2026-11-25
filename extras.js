@@ -57,12 +57,12 @@ board.addEventListener("wheel", event => {
   setZoom(zoom * (1 - event.deltaY * 0.01), event.clientX - rect.left, event.clientY - rect.top);
 }, { passive: false });
 
-// When the page opens: zoom out so most of the board (and the big circle) shows,
-// but not so far that the cards get too small to read, then center it
-const fitZoom = Math.min(board.clientWidth / CANVAS_WIDTH, board.clientHeight / CANVAS_HEIGHT);
-setZoom(Math.max(fitZoom, 0.6));
-board.scrollLeft = (CANVAS_WIDTH * zoom - board.clientWidth) / 2;
-board.scrollTop = (CANVAS_HEIGHT * zoom - board.clientHeight) / 2;
+// When the page opens: zoom so the cards fill the whole width of the board
+// (no empty strip next to the panel), but keep them big enough to read.
+// Scroll down to see the rest.
+setZoom(Math.min(1.2, Math.max(0.55, board.clientWidth / CANVAS_WIDTH)));
+board.scrollLeft = 0;
+board.scrollTop = 0;
 
 
 // ---------- 2. THE "?" GUIDE ----------
