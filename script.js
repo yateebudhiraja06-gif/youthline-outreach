@@ -84,7 +84,7 @@ const entries = {
       ["Meeting agenda", "https://www.oregon.gov/gov/policies/Documents/01_BHTC%20Meeting%20Agenda%2010.23.25%20Final.pdf"],
       ["Recording (1:00:06 to 1:16:57)", "https://www.youtube.com/watch?v=LZo1aW-b-3s&t=3606s"]
     ],
-    description: "Peer helpers are more empathic to the situations of those who reach out for support, as they may be going through something similar. There is also an equal power dynamic, which allows people to share more with people their own age. As for why I do it, I want to see a world that is compassionate and connected.",
+    description: "A YouthLine volunteer presented YouthLine to Oregon’s Behavioral Health Talent Council as a proven model for supporting young people and growing the behavioral health workforce. The presentation showed how peer helpers close in age build trust through an equal power dynamic, how volunteering builds skills that carry into behavioral health careers, and how ongoing training, regular check-ins, and a supportive culture help prevent burnout. “Workforces now more than ever need workers who have emotional intelligence, resilience, and adaptability. YouthLine has trained students to have all three of these characteristics.”",
     connections: ["bh-tech", "new-drug-talk"]
   },
 
