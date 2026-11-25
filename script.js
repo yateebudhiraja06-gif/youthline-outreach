@@ -99,7 +99,7 @@ const entries = {
     sources: [
       ["The New Drug Talk: Oregon resources", "https://www.thenewdrugtalk.org/resources/oregon"]
     ],
-    description: "A YouthLine volunteer presented why teens might find it difficult to tell adults about things like suicide and self-harm, as well as ways adults can approach those talks with understanding rather than judgment.",
+    description: "A YouthLine volunteer presented why teens might find it difficult to tell adults about things like substance use and mental health, as well as ways adults can approach those talks with understanding rather than judgment.",
     connections: ["unplugged", "talent-council"]
   },
 
