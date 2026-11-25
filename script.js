@@ -49,13 +49,13 @@ const entries = {
     title: "AFSP Advocacy Day",
     details: {
       "Date": "February 9, 2026",
-      "Venue": "Oregon State Legislature",
+      "Venue": "Oregon State Capitol, Salem",
       "Partner": "American Foundation for Suicide Prevention",
       "Type": "Policy",
       "Key strength": "Advocating"
     },
     sources: [],
-    description: "HB 4070: ensure parity in access to mental health and substance use disorder treatment. HB 4028: strengthen insurance parity requirements to protect behavioral health treatment providers. SB 1546: supporting safety in the use of artificial intelligence.",
+    description: "YouthLine volunteers joined the American Foundation for Suicide Prevention at the Oregon State Capitol to advocate for three bills, talking with state senators and representatives about each one. HB 4070 ensures parity in access to mental health and substance use disorder treatment. HB 4028 strengthens insurance parity requirements to protect behavioral health treatment providers. SB 1546 requires AI companion platforms to refer users who express suicidal thoughts to crisis resources like 988.",
     connections: ["sb-1546", "afsp-walk"]
   },
 
