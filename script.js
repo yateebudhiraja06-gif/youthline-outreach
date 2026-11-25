@@ -357,7 +357,7 @@ const entries = {
     sources: [
       ["Listen on JPR", "https://www.ijpr.org/podcast/the-jefferson-exchange/2026-01-15/youthline-expands-to-southern-oregon"]
     ],
-    description: "“The organization has served ages 10 to 24 since 2000.” (Jefferson Public Radio)",
+    description: "YouthLine’s southern Oregon outreach coordinator, Pan Hamsa, joined Jefferson Public Radio’s The Jefferson Exchange to explain what YouthLine is and its purpose, as YouthLine expands its outreach to young people, schools, and community groups in southern Oregon.",
     connections: ["wildhorse-grant", "osbha"]
   },
 
